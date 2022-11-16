@@ -12,26 +12,31 @@
 
 .logo {
     margin-left: 5%;
-    max-width: 7%;
+    width: 7%;
 }
 
 .map-container {
-    width: 50%;
+    position: relative;
+    height: 80vh;
+    width: 90.3vh;
     margin: 0 auto;
 }
 
-.map-container .map {
+.map.map-container .map {
+    height: 100%;
     width: 100%;
-    height: auto;
 }
 
-.map-container .animal-button {
+.map-container .bear-button {
     position: absolute;
-    width: 50%;
-    left: 25%;
+    width: 33px;
+    height: auto;
+    top: 8.77vh;
+    left: 44.53vh;
     background-color: transparent;
+    border: 0px;
 }
 
-.map-container .animal-button:hover {
+.map-container .bear-button:hover {
     transform: scale(1.1)
 }
