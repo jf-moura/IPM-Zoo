@@ -37,6 +37,20 @@
     border: 0px;
 }
 
+.map-container .elephant-button {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    top: 34.49vh;
+    left: 10.67vh;
+    background-color: transparent;
+    border: 0px;
+}
+
 .map-container .bear-button:hover {
-    transform: scale(1.1)
+    transform: scale(1.2);
+}
+
+.map-container .elephant-button:hover {
+    transform: scale(1.2);
 }
