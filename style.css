@@ -81,24 +81,64 @@
 }
 
 .map-container {
-  width: 48%;
-  margin: 0 auto;
+    position: relative;
+    height: 80vh;
+    width: 90.3vh;
+    margin: 0 auto;
 }
 
-.map-container .map {
-  width: 100%;
-  height: auto;
+.map.map-container .map {
+    height: 100%;
+    width: 100%;
 }
 
-.map-container .animal-button {
-  position: absolute;
-  width: 50%;
-  left: 25%;
-  background-color: transparent;
+.map-container .bear-button {
+    position: absolute;
+    width: 33px;
+    height: auto;
+    top: 8.77vh;
+    left: 44.53vh;
+    background-color: transparent;
+    border: 0px;
 }
 
-.map-container .animal-button:hover {
-  transform: scale(1.1);
+.map-container .elephant-button {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    top: 34.49vh;
+    left: 10.67vh;
+    background-color: transparent;
+    border: 0px;
+}
+
+.map-container .bear-button:hover {
+    transform: scale(1.2);
+}
+
+.map-container .elephant-button:hover {
+  transform: scale(1.2);
+}
+
+.footer-container {
+  background: rgb(14, 156, 71);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-social-media {
+  margin-left: 30px;
+  justify-content: end;
+  display: grid;
+  grid-template-columns: 100px 100px;;
 }
 
 .footer-container {
