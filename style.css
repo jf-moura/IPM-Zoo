@@ -1,18 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Bellota Text", cursive;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bellota Text", cursive;
+  width: 100%;
 }
 
 .header {
-    margin-top: 0.5%;
+  background: rgb(245, 245, 245);
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 200px;
+  height: fit-content;
 }
 
-.logo {
-    margin-left: 5%;
-    width: 7%;
+.header a {
+  text-decoration: none;
+  color: rgb(127, 214, 149);
+  font-size: 24px;
+}
+.header a:hover {
+  color: rgb(49, 190, 84);
+}
+
+.logo-container {
+  width: 10%;
+  align-items: center;
+}
+
+.nav-subsections {
+  margin-left: 30px;
+  justify-content: start;
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+.toggle {
+  position: relative;
+  width: 6em;
+  height: 0.6em;
+  border-radius: 2em;
+  border: 0.06em solid #9f9f9f;
+  background-image: linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  margin: 1.04em 0.6em;
+  cursor: pointer;
+  filter: drop-shadow(0.06em 0.06em 0.04em rgba(0, 0, 0, 0.3));
+}
+
+.toggle-btn::after {
+  position: absolute;
+  top: -1.3rem;
+  left: 0;
+  width: 50%;
+  font-size: 2em;
+  text-align: center;
+  transition: all 500ms cubic-bezier(0.34, 0.78, 0.55, 1.4);
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-checkbox:checked + .toggle-btn::after {
+  left: 50%;
+}
+
+.young-old .toggle-btn::after {
+  content: "👦";
+}
+
+.young-old .toggle-checkbox:checked + .toggle-btn::after {
+  content: "👨";
+}
+
+.main-content-container {
+  background: rgb(245, 245, 245);
 }
 
 .map-container {
@@ -52,5 +117,47 @@
 }
 
 .map-container .elephant-button:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.footer-container {
+  background: rgb(14, 156, 71);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-social-media {
+  margin-left: 30px;
+  justify-content: end;
+  display: grid;
+  grid-template-columns: 100px 100px;;
+}
+
+.footer-container {
+  background: rgb(14, 156, 71);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-social-media {
+  margin-left: 30px;
+  justify-content: end;
+  display: grid;
+  grid-template-columns: 100px 100px;
 }
