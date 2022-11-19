@@ -1,0 +1,12 @@
+{
+  "bear": {
+    "name": "Bear",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "elephant": {
+    "name": "Elephant",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  }
+}
