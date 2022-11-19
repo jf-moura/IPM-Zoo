@@ -94,30 +94,128 @@
 
 .map-container .bear-button {
     position: absolute;
-    width: 33px;
+    width: 4.26vh;
     height: auto;
     top: 8.77vh;
-    left: 44.53vh;
+    left: 44.48vh;
     background-color: transparent;
     border: 0px;
 }
 
 .map-container .elephant-button {
     position: absolute;
-    width: 60px;
+    width: 8.05vh;
     height: auto;
     top: 34.49vh;
-    left: 10.67vh;
+    left: 10.66vh;
     background-color: transparent;
     border: 0px;
 }
 
+.map-container .cheetah-button {
+  position: absolute;
+  width: 4.56vh;
+  height: auto;
+  top: 18.73vh;
+  left: 10.84vh;
+  background-color: transparent;
+  border: 0px;
+}
+
+.map-container .giraffe-button {
+  position: absolute;
+  width: 5.21vh;
+  height: auto;
+  top: 42.61vh;
+  left: 15.93vh;
+  background-color: transparent;
+  border: 0px;
+}
+
+.map-container .hippo-button {
+  position: absolute;
+  width: 4.38vh;
+  height: auto;
+  top: 33.6vh;
+  left: 21.68vh;
+  background-color: transparent;
+  border: 0px;
+}
+
+.map-container .lion-button {
+  position: absolute;
+  width: 3.91vh;
+  height: auto;
+  top: 25.18vh;
+  left: 22.21vh;
+  background-color: transparent;
+  border: 0px;
+}
+
+.map-container .rhino-button {
+  position: absolute;
+  width: 4.03vh;
+  height: auto;
+  top: 40.95vh;
+  left: 48.09vh;
+  background-color: transparent;
+  border: 0px;
+}
+
+.map-container .tiger-button {
+  position: absolute;
+  width: 6.81vh;
+  height: auto;
+  top: 54.93vh;
+  left: 35.48vh;
+  background-color: transparent;
+  border: 0px;
+}
+
+.map-container .dolphin-button {
+  position: absolute;
+  width: 2.07vh;
+  height: auto;
+  top: 75.26vh;
+  left: 41.58vh;
+  background-color: transparent;
+  border: 0px;
+}
+
 .map-container .bear-button:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 .map-container .elephant-button:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
+}
+
+.map-container .cheetah-button:hover {
+  transform: scale(1.3);
+}
+
+.map-container .giraffe-button:hover {
+  transform: scale(1.3);
+}
+
+.map-container .hippo-button:hover {
+  transform: scale(1.3);
+}
+
+.map-container .lion-button:hover {
+  transform: scale(1.3);
+}
+
+.map-container .rhino-button:hover {
+  transform: scale(1.3);
+}
+
+.map-container .tiger-button:hover {
+  transform: scale(1.3);
+}
+
+.map-container .dolphin-button:hover {
+  transform: scale(1.3);
 }
 
 .footer-container {
