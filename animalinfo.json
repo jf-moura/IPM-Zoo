@@ -43,5 +43,30 @@
     "name": "Dolphin",
     "adult_text": "ADULT ADULT",
     "kid_text": "KID KID"
+  },
+  "zebra": {
+    "name": "Zebra",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "primate": {
+    "name": "Primate",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "deer": {
+    "name": "Deer",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "panda": {
+    "name": "Red Panda",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "camel": {
+    "name": "Camel",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
   }
 }
