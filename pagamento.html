@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pagamento.css" />
+    <link rel="bilhetes_script" href="pagamento.js" />
+
+    <title>Lisbon's Zoo</title>
+
+    <!-- Created by S-Tech04 -->
+  </head>
+
+  <body>
+    <nav class="header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="./assets/logo_projetoIPM.png" />
+        </a>
+      </div>
+      <div class="nav-subsections">
+        <a href="#">Organizar Visita</a>
+        <a href="#">Comprar Bilhetes</a>
+      </div>
+      <label class="toggle young-old" id="toggle_outside">
+        <input type="checkbox" class="toggle-checkbox" />
+        <div class="toggle-btn"></div>
+      </label>
+    </nav>
+
+
+ <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form id="billing_form">
+        <div class="row">
+          <div class="col-50">
+            <h3>Dados do cliente</h3>
+            <label for="fname"><i class="fa fa-user"></i> Nome Completo: (*)</label>
+            <input type="text" id="fname" name="firstname" placeholder="O seu nome completo">
+            <label for="email"><i class="fa fa-envelope"></i> Email: (*)</label>
+            <input type="text" id="email" name="email" placeholder="O seu e-mail">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Localidade</label>
+            <input type="text" id="loc" name="address" placeholder="A sua localidade">
+            <label for="adr"><i class="fa fa-address-card-o"></i> País</label>
+            <input type="text" id="cntr" name="address" placeholder="País">
+            </div>
+
+          <div class="col-50">
+            <h3>Pagamento</h3>
+            <label for="cname">Nome do Titular do Cartão</label>
+            <input type="text" id="cname" name="cardname" placeholder="Como consta on seu cartão bancário.">
+            <label for="ccnum">Número do Cartão Bancário</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="Os 16 números que se econtram na frente do cartão.">
+            <label for="expmonth">Validade do Cartão (Mês)</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Mês da validade do cartão">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Validade do Cartão(Ano)</label>
+                <input type="text" id="expyear" name="expyear" placeholder="Ano da validade do cartão">
+              </div>
+              <div class="col-50">
+                <label for="cvv">Código de Segurança (CVC)</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <input type="submit" value="Continuar Compra" class="btn" onsubmit="submit_billing()">
+      <script src="./bilhetes.js"></script>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="footer-container">
+      <a href="https://www.zoo.pt/pt/" target="_blank">
+        Website Oficial Jardim Zoológico de Lisboa
+      </a>
+      <div class="footer-social-media">
+        <a
+          href="https://www.instagram.com/jardimzoologico_oficial/"
+          target="_blank"
+          >Instagram</a
+        >
+        <a
+          href="https://www.youtube.com/channel/UCtRQsozvlnEFt3rm8-Sx9Qw"
+          target="_blank"
+          >Youtube</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

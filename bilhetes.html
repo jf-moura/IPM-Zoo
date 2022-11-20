@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bilhetes.css" />
+    <link rel="bilhetes_script" href="bilhetes.js" />
+
+    <title>Lisbon's Zoo</title>
+
+    <!-- Created by S-Tech04 -->
+  </head>
+
+  <body>
+    <script src="./bilhetes.js">
+    </script>
+    <nav class="header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="./assets/logo_projetoIPM.png" />
+        </a>
+      </div>
+      <div class="nav-subsections">
+        <a href="#">Organizar Visita</a>
+        <a href="#">Comprar Bilhetes</a>
+      </div>
+      <label class="toggle young-old" id="toggle_outside">
+        <input type="checkbox" class="toggle-checkbox" />
+        <div class="toggle-btn"></div>
+      </label>
+    </nav>
+
+
+    <table>
+
+      <colgroup>
+        <col class = "col1">
+        <col class = "col2">
+        <col class = "col3">
+      </colgroup>
+
+      <tbody>
+        <td>
+          <label for=""> Criança (3 - 12 Anos) ($<span id="children_amm">00</span>)</label>
+        </td>
+        <td>
+
+          <div class="plus-minus-btn">
+            <button id="children_amm_inc" onclick="set_price_by_age(true, 'children')" class="btn btn-light"> + </button>
+          <div class = "price-btn">
+            <input id="children_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
+          </div>
+
+            <button id="children_amm_dec" onclick="set_price_by_age(false, 'children')" class="btn btn-light"> - </button>
+          </div>
+        </td>
+      </tbody>
+
+      <tbody>
+        <td class = "form-inline">
+            <label for=""> Adulto (13 - 64 Anos)</label>
+        </td>
+        <td>
+          <div class="plus-minus-btn">
+            <button id="adul_amm_inc" onclick="set_price_by_age(true, 'adult')" class="btn btn-light"> + </button>
+          </div>
+          <input id="adult_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
+
+          <div class="plus-minus-btn">
+            <button id="adult_amm_dec" onclick="set_price_by_age(false, 'adult')" class="btn btn-light"> - </button>
+          </div>
+        </td>
+      </tbody>
+
+      <tbody>
+        <td>
+            <label for=""> Sénior (+65 Anos) ($<span id="senior_amm">00</span>)</label>
+        </td>
+        <td>
+          <div class="plus-minus-btn">
+            <button id="senior_amm_inc" onclick="set_price_by_age(true, 'senior')" class="btn btn-light"> + </button>
+          <div class = "price-btn">
+            <input id="senior_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
+          </div>
+
+            <button id="senior_amm_dec" onclick="set_price_by_age(false, 'senior')" class="btn btn-light"> - </button>
+          </div>
+        </td>
+      </tbody>
+    </table>
+
+
+
+    <div class="footer-container">
+      <a href="https://www.zoo.pt/pt/" target="_blank">
+        Website Oficial Jardim Zoológico de Lisboa
+      </a>
+      <div class="footer-social-media">
+        <a
+          href="https://www.instagram.com/jardimzoologico_oficial/"
+          target="_blank"
+          >Instagram</a
+                      >
+        <a
+          href="https://www.youtube.com/channel/UCtRQsozvlnEFt3rm8-Sx9Qw"
+          target="_blank"
+          >Youtube</a
+                    >
+      </div>
+    </div>
+  </body>
+</html>
