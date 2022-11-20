@@ -1,0 +1,39 @@
+.plan-visit-main-content-container {
+  display: flex;
+}
+
+.plan-visit-main-content-container .map-container {
+  flex: 0.6;
+  padding-left: 200px;
+  background: blue;
+}
+
+.plan-visit-main-content-container .animals-list {
+  flex: 0.4;
+  padding-right: 200px;
+  background: red;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
