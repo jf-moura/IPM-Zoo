@@ -8,5 +8,40 @@
     "name": "Elephant",
     "adult_text": "ADULT ADULT",
     "kid_text": "KID KID"
+  },
+  "cheetah": {
+    "name": "Cheetah",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "giraffe": {
+    "name": "Giraffe",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "hippo": {
+    "name": "Hippopotamus",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "lion": {
+    "name": "Lion",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "rhino": {
+    "name": "Rhinoceros",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "tiger": {
+    "name": "Tiger",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
+  },
+  "dolphin": {
+    "name": "Dolphin",
+    "adult_text": "ADULT ADULT",
+    "kid_text": "KID KID"
   }
 }
