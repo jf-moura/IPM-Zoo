@@ -17,7 +17,7 @@ function set_price_by_age(price_inc, ageClass)
     document.getElementById(ageClass + "_ammount").value = total;
 
     let ticket_price = 0;
-    if(ageClass == "adult")
+    if(ageClass == "children")
     {
         ticket_price = total * 15.68;
     }

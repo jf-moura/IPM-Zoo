@@ -33,64 +33,85 @@
     </nav>
 
 
-    <table>
+    <div class="div_table">
+      <table style="top=100px; width:50%; margin-left:auto; margin-right:auto;" class="table">
+        <thead>
+          <tr></tr>
+          <tr scope="col" >
+            <label for="" class="tableheader"> Preço </label>
+          </tr>
+          <tr></tr>
+        </thead>
 
-      <colgroup>
-        <col class = "col1">
-        <col class = "col2">
-        <col class = "col3">
-      </colgroup>
+        <colgroup>
+          <col class = "col1">
+          <col class = "col2">
+          <col class = "col3">
+        </colgroup>
 
-      <tbody>
-        <td>
-          <label for=""> Criança (3 - 12 Anos) ($<span id="children_amm">00</span>)</label>
-        </td>
-        <td>
+        <tbody>
+          <td>
+            <label for=""> Criança (3 - 12 Anos)</label>
+            <label for="" class = "precoC preco"> 15.68 </label>
+          </td>
+          <td class = "form-inline" style="width:150px;">
+            <div class="plus-minus-btn" style="float:right; width:25px;">
+              <button id="children_amm_inc" onclick="set_price_by_age(true, 'children')" class="btn btn-light"> + </button>
+            </div>
+            <div style="float:right; width:80px;">
+              <input id="children_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
+            </div>
 
-          <div class="plus-minus-btn">
-            <button id="children_amm_inc" onclick="set_price_by_age(true, 'children')" class="btn btn-light"> + </button>
-          <div class = "price-btn">
-            <input id="children_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
-          </div>
+            <div class="plus-minus-btn" style="float:right; width:05px;">
+              <button id="children_amm_dec" onclick="set_price_by_age(false, 'children')" class="btn btn-light"> - </button>
+            </div>
+          </td>
+        </tbody>
 
-            <button id="children_amm_dec" onclick="set_price_by_age(false, 'children')" class="btn btn-light"> - </button>
-          </div>
-        </td>
-      </tbody>
-
-      <tbody>
-        <td class = "form-inline">
+        <tbody class= "t-body">
+          <td style="width:10px;">
             <label for=""> Adulto (13 - 64 Anos)</label>
-        </td>
-        <td>
-          <div class="plus-minus-btn">
-            <button id="adul_amm_inc" onclick="set_price_by_age(true, 'adult')" class="btn btn-light"> + </button>
-          </div>
-          <input id="adult_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
+            <label for="" class="precoA preco"> 25.18 </label>
+          </td>
+          <td class = "form-inline" style="width:150px;">
+            <div class="plus-minus-btn" style="float:right; width:25px;">
+              <button id="adul_amm_inc" onclick="set_price_by_age(true, 'adult')" class="btn btn-light"> + </button>
+            </div>
+            <div style="float:right; width:80px;">
+              <input id="adult_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
+            </div>
 
-          <div class="plus-minus-btn">
-            <button id="adult_amm_dec" onclick="set_price_by_age(false, 'adult')" class="btn btn-light"> - </button>
-          </div>
-        </td>
-      </tbody>
+            <div class="plus-minus-btn" style="float:right; width:05px;">
+              <button id="adult_amm_dec" onclick="set_price_by_age(false, 'adult')" class="btn btn-light"> - </button>
+            </div>
+          </td>
+        </tbody>
 
-      <tbody>
-        <td>
-            <label for=""> Sénior (+65 Anos) ($<span id="senior_amm">00</span>)</label>
-        </td>
-        <td>
-          <div class="plus-minus-btn">
-            <button id="senior_amm_inc" onclick="set_price_by_age(true, 'senior')" class="btn btn-light"> + </button>
-          <div class = "price-btn">
-            <input id="senior_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
-          </div>
+        <tbody>
+          <td>
+            <label for=""> Sénior (+65 Anos)</label>
+            <label for="" class="precoS preco"> 18.05 </label>
+          </td>
+          <td class = "form-inline" style="width:150px;">
+            <div class="plus-minus-btn" style="float:right; width:25px;">
+              <button id="senior_amm_inc" onclick="set_price_by_age(true, 'senior')" class="btn btn-light"> + </button>
+            </div>
+            <div style="float:right; width:80px;">
+              <input id="senior_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
+            </div>
 
-            <button id="senior_amm_dec" onclick="set_price_by_age(false, 'senior')" class="btn btn-light"> - </button>
-          </div>
-        </td>
-      </tbody>
-    </table>
+            <div class="plus-minus-btn" style="float:right; width:05px;">
+              <button id="senior_amm_dec" onclick="set_price_by_age(false, 'senior')" class="btn btn-light"> - </button>
+            </div>
+          </td>
+        </tbody>
+      </table>
+    </div>
 
+    <div>
+      <button id="continuar_pagamento" class="btn_pagamento"> Continuar </button>
+      <button id="voltar_atras" class="voltar_atras"> Voltar atrás </button>
+    </div>
 
 
     <div class="footer-container">
