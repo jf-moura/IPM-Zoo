@@ -1,29 +1,31 @@
 .plan-visit-main-content-container {
   display: flex;
+  padding-left: 30vh;
 }
-
 .plan-visit-main-content-container .map-container {
-  flex: 0.6;
-  padding-left: 200px;
-  background: blue;
+  position: relative;
+  height: 80vh;
+  width: 90.3vh;
+  margin: 0 0 0 0;
 }
 
 .plan-visit-main-content-container .animals-list {
-  flex: 0.4;
-  padding-right: 200px;
-  background: red;
+  position: relative;
+  height: 80vh;
+  width: 90.3vh;
+  margin: 0 0 0 0;
 }
 
 .collapsible {
   background-color: #777;
   color: white;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 16px;
+  width: 50%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .active,
@@ -32,8 +34,26 @@
 }
 
 .content {
-  padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+  width: 50%;
+  text-align: center;
+}
+
+.content ul {
+  list-style-type: none;
+}
+
+.content li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.content li:hover {
+  background-color: #d2d2d2;
+}
+
+.submitAnimalsButton {
+  width: 50%;
 }

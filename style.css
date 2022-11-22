@@ -65,7 +65,7 @@
   visibility: hidden;
 }
 
-.toggle-checkbox:checked+.toggle-btn::after {
+.toggle-checkbox:checked + .toggle-btn::after {
   left: 50%;
 }
 
@@ -73,7 +73,7 @@
   content: "👨";
 }
 
-.young-old .toggle-checkbox:checked+.toggle-btn::after {
+.young-old .toggle-checkbox:checked + .toggle-btn::after {
   content: "👦";
 }
 
@@ -185,7 +185,7 @@
 
 .map-container .zebra-button {
   position: absolute;
-  width: 3.20vh;
+  width: 3.2vh;
   height: auto;
   top: 57.96vh;
   left: 45.66vh;
@@ -207,7 +207,7 @@
   position: absolute;
   width: 4.62vh;
   height: auto;
-  top: 16.30vh;
+  top: 16.3vh;
   left: 44.95vh;
   background-color: transparent;
   border: 0px;

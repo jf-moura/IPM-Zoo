@@ -22,9 +22,9 @@
       </div>
       <div class="nav-subsections">
         <a href="PlanVisit.html">Organizar Visita</a>
-        <a href="#">Comprar Bilhetes</a>
+        <a href="bilhetes.html">Comprar Bilhetes</a>
       </div>
-      <label class="toggle young-old">
+      <label class="toggle young-old" id="toggle_outside">
         <input type="checkbox" class="toggle-checkbox" />
         <div class="toggle-btn"></div>
       </label>
@@ -35,43 +35,42 @@
         <img class="map" src="./assets/map.png" />
       </div>
       <div class="animals-list">
-        <div class="pretty p-curve">
-          <!-- <form>
-            <div class="checkboxes">
-              <label
-                ><input type="checkbox" id="Animal1" />
-                <span>Animal1</span></label
-              >
-              <label
-                ><input type="checkbox" id="Animal2" />
-                <span>Animal2</span></label
-              >
-              <label
-                ><input type="checkbox" id="Animal3" />
-                <span>Animal3</span></label
-              >
-            </div>
-          </form> -->
-
-          <button type="button" class="collapsible">Open Section 1</button>
+        <div id="awdawd">
+          <button type="button" class="collapsible">Animal Category 1</button>
           <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <ul>
+              <li class="bear" onclick="selectAnimal('bear')">Bear</li>
+              <li class="elephant" onclick="selectAnimal('elephant')">
+                Elephant
+              </li>
+              <li class="cheetah" onclick="selectAnimal('cheetah')">Cheetah</li>
+              <li class="giraffe" onclick="selectAnimal('giraffe')">Giraffe</li>
+              <li class="hippo" onclick="selectAnimal('hippo')">Hippo</li>
+            </ul>
           </div>
-          <button type="button" class="collapsible">Open Section 2</button>
+          <button type="button" class="collapsible">Animal Category 2</button>
           <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <ul>
+              <li class="lion" onclick="selectAnimal('lion')">Lion</li>
+              <li class="rhino" onclick="selectAnimal('rhino')">Rhino</li>
+              <li class="tiger" onclick="selectAnimal('tiger')">Tiger</li>
+              <li class="dolphin" onclick="selectAnimal('dolphin')">Dolphin</li>
+              <li class="zebra" onclick="selectAnimal('zebra')">Zebra</li>
+              <li class="primate" onclick="selectAnimal('primate')">Primate</li>
+              <li class="deer" onclick="selectAnimal('deer')">Deer</li>
+              <li class="panda" onclick="selectAnimal('panda')">Panda</li>
+              <li class="camel" onclick="selectAnimal('camel')">Camel</li>
+            </ul>
           </div>
+          <button
+            class="submitAnimalsButton"
+            type="submit"
+            onclick="handleSubmit()"
+          >
+            Submit
+          </button>
         </div>
+        <div id="listChosenAnimals"></div>
       </div>
     </div>
 
