@@ -41,6 +41,7 @@ function handleSubmit() {
   }
   console.log("Animais escolhidos");
   console.log(animalsOrdered);
+  sessionStorage.setItem("oAnimals", animalsOrdered);
   location.href = "rota.html";
 }
 
@@ -60,4 +61,21 @@ function changeDisplaySelectedAnimal(animal) {
     );
     newDisplayedAnimal.style.display = "block";
   }
+}
+
+function displayRoute() {
+  const div = document.getElementById("ideal-route");
+  const data = sessionStorage.getItem("oAnimals").split(",");
+
+  let string = "";
+  for (let i = 0; i < data.length; i++) {
+    let auxString = "<li>" + (i + 1) + "º - " + data[i] + "</li>";
+    string = string + auxString;
+    console.log(auxString);
+  }
+
+  console.log("finalstring");
+  console.log(string);
+
+  div.innerHTML = string;
 }

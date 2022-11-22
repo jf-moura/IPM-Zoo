@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="rota.css" />
     <script type="text/javascript" src="PlanVisit.js"></script>
     <title>Lisbon's Zoo</title>
 
@@ -28,7 +29,23 @@
       </label>
     </nav>
 
-    <div class="ideal-route"></div>
+    <div class="ideal-route-container" id="ideal-route-container">
+      <h2>Rota Ideal</h2>
+      <ul id="ideal-route"></ul>
+      <div s>
+        <button
+          type="button"
+          class="back-button"
+          id="back-button"
+          onclick="location.href = 'PlanVisit.html';"
+        >
+          Voltar atrás
+        </button>
+        <button type="submit" class="print-button" id="print-button">
+          Imprimir
+        </button>
+      </div>
+    </div>
 
     <div class="footer-container">
       <a href="https://www.zoo.pt/pt/" target="_blank">
@@ -49,3 +66,7 @@
     </div>
   </body>
 </html>
+
+<script>
+  displayRoute();
+</script>
