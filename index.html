@@ -19,10 +19,10 @@
       </div>
       <div class="nav-subsections">
         <a href="PlanVisit.html">Organizar Visita</a>
-        <a href="#">Comprar Bilhetes</a>
+        <a href="bilhetes.html">Comprar Bilhetes</a>
       </div>
-      <label class="toggle young-old">
-        <input type="checkbox" class="toggle-checkbox" id="toggle_outside" />
+      <label class="toggle young-old" id="toggle_outside">
+        <input type="checkbox" class="toggle-checkbox" />
         <div class="toggle-btn"></div>
       </label>
     </nav>
@@ -75,6 +75,43 @@
           </button>
         </div>
       </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header" id="modal-header">
+            <h2 id="animal-name-modal">PLACEHOLDER</h2>
+            <span class="close">&times;</span>
+            <label class="toggle-popup young-old" id="toggle_outside">
+              <input type="checkbox" class="toggle-checkbox" />
+              <div class="toggle-btn"></div>
+            </label>
+          </div>
+          <div class="modal-body" id="modal-body">
+            <div class="animal-info">
+              <p>
+                InfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfo
+              </p>
+            </div>
+            <div>
+              <div class="photo-1">
+                <img src="./assets/animals-photos/urso-1.jpg" />
+              </div>
+              <div class="photo-2">
+                <img src="./assets/animals-photos/urso-1.jpg" />
+              </div>
+              <div class="photo-3">
+                <img src="./assets/animals-photos/urso-1.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer" id="modal-footer">
+            <audio controls>
+              <source src="./assets/animal-audio/bear.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <button class="know-more">Saber Mais</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="footer-container">
@@ -95,20 +132,6 @@
       </div>
     </div>
   </body>
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header" id="modal-header">
-        <span class="close">&times;</span>
-        <h2 id="animal-name-modal">PLACEHOLDER</h2>
-      </div>
-      <div class="modal-body" id="modal-body">
-        <p>PLACEHOLDER</p>
-      </div>
-      <div class="modal-footer" id="modal-footer">
-        <h3>PLACEHOLDER</h3>
-      </div>
-    </div>
-  </div>
 </html>
 <script>
   // Get the modal
