@@ -17,7 +17,7 @@ const orderToVisit = [
 ];
 
 const NO_ANIMALS_SELECTED =
-  "You have to selected at least one animal in order to oraganize your visit!";
+  "You have to selected at least one animal in order to organize your visit!";
 
 var selectedAnimals = [];
 
@@ -47,19 +47,31 @@ function handleSubmit() {
 
 function changeDisplaySelectedAnimal(animal) {
   if (!selectedAnimals.includes(animal)) {
+    //map
     const elem = document.getElementById(animal + "-button-not-selected");
     elem.style.display = "none";
     const newDisplayedAnimal = document.getElementById(
       animal + "-button-selected"
     );
     newDisplayedAnimal.style.display = "block";
+
+    //list animals
+    const elemList = document.getElementById(animal + "-list");
+    elemList.style.backgroundColor = "#45a049";
+    elemList.style.color = "white";
   } else {
+    //map
     const elem = document.getElementById(animal + "-button-selected");
     elem.style.display = "none";
     const newDisplayedAnimal = document.getElementById(
       animal + "-button-not-selected"
     );
     newDisplayedAnimal.style.display = "block";
+
+    //list animals
+    const elemList = document.getElementById(animal + "-list");
+    elemList.style.backgroundColor = "#f1f1f1";
+    elemList.style.color = "black";
   }
 }
 
