@@ -86,19 +86,19 @@
             </label>
           </div>
           <div class="modal-body" id="modal-body">
-            <div class="animal-info">
+            <div class="animal-info" id="animal_info">
               <p>
                 InfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfo
               </p>
             </div>
             <div>
-              <div class="photo-1">
+              <div class="photo-1" id="photo1">
                 <img src="./assets/animals-photos/urso-1.jpg" />
               </div>
-              <div class="photo-2">
+              <div class="photo-2" id="photo2">
                 <img src="./assets/animals-photos/urso-1.jpg" />
               </div>
-              <div class="photo-3">
+              <div class="photo-3" id="photo3">
                 <img src="./assets/animals-photos/urso-1.jpg" />
               </div>
             </div>
@@ -137,9 +137,11 @@
   // Get the modal
   const modal = document.getElementById("modal");
   const animal_name_modal = document.getElementById("animal-name-modal");
-  const modal_body = document.getElementById("modal-body");
+  const animal_info = document.getElementById("animal_info");
   const modal_footer = document.getElementById("modal-footer");
-
+  const modal_photo1 = document.getElementById("photo1");
+  const modal_photo2 = document.getElementById("photo2");
+  const modal_photo3 = document.getElementById("photo3");
   // Get the <span> element that closes the modal
   const span = document.getElementsByClassName("close")[0];
 
@@ -156,10 +158,12 @@
     animal_name_modal.innerHTML = kidToggle_outside.checked
       ? `${animalinfo[animal].name_kid}`
       : `${animalinfo[animal].name_adult}`;
-    modal_body.innerHTML = kidToggle_outside.checked
+    animal_info.innerHTML = kidToggle_outside.checked
       ? `${animalinfo[animal].kid_text}`
       : `${animalinfo[animal].adult_text}`;
-
+    modal_photo1.innerHTML = `<img src=${animalinfo[animal].images[0]}" />`;
+    modal_photo2.innerHTML = `<img src=${animalinfo[animal].images[1]}" />`;
+    modal_photo3.innerHTML = `<img src=${animalinfo[animal].images[2]}" />`;
     modal.style.display = "block";
   }
 
