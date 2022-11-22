@@ -8,7 +8,8 @@
       "./assets/pictures/urso_pardo1.jpg",
       "./assets/pictures/urso_pardo2.jpg",
       "./assets/pictures/urso_pardo3.jpg"
-    ]
+    ],
+    "audio": "./assets/audio/bear.mp3"
   },
   "elephant": {
     "name_kid": "Elefante africano de savana",

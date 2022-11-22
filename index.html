@@ -80,8 +80,12 @@
           <div class="modal-header" id="modal-header">
             <h2 id="animal-name-modal">PLACEHOLDER</h2>
             <span class="close">&times;</span>
-            <label class="toggle-popup young-old" id="toggle_outside">
-              <input type="checkbox" class="toggle-checkbox" />
+            <label class="toggle-popup young-old">
+              <input
+                type="checkbox"
+                class="toggle-checkbox"
+                id="toggle_inside"
+              />
               <div class="toggle-btn"></div>
             </label>
           </div>
@@ -93,19 +97,19 @@
             </div>
             <div>
               <div class="photo-1" id="photo1">
-                <img src="./assets/animals-photos/urso-1.jpg" />
+                <img src="" />
               </div>
               <div class="photo-2" id="photo2">
-                <img src="./assets/animals-photos/urso-1.jpg" />
+                <img src="" />
               </div>
               <div class="photo-3" id="photo3">
-                <img src="./assets/animals-photos/urso-1.jpg" />
+                <img src="" />
               </div>
             </div>
           </div>
           <div class="modal-footer" id="modal-footer">
-            <audio controls>
-              <source src="./assets/animal-audio/bear.mp3" type="audio/mpeg" />
+            <audio controls id="audio_kid">
+              <source src="" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
             <button class="know-more">Saber Mais</button>
@@ -152,23 +156,55 @@
   const animalinfo = JSON.parse(request.responseText);
 
   const kidToggle_outside = document.getElementById("toggle_outside");
+  const kidToggle_inside = document.getElementById("toggle_inside");
+
+  const audioKid = document.getElementById("audio_kid");
+  const audioKid_source = document.getElementById("audio_kid_source");
+
+  var curAnimal = null;
 
   function open_popup(animal) {
     kidToggle_outside.style.display = "none";
-    animal_name_modal.innerHTML = kidToggle_outside.checked
+    curAnimal = animal;
+
+    // Info
+    animal_name_modal.innerHTML = kidToggle_outside.control.checked
       ? `${animalinfo[animal].name_kid}`
       : `${animalinfo[animal].name_adult}`;
-    animal_info.innerHTML = kidToggle_outside.checked
+    animal_info.innerHTML = kidToggle_outside.control.checked
       ? `${animalinfo[animal].kid_text}`
       : `${animalinfo[animal].adult_text}`;
-    modal_photo1.innerHTML = `<img src=${animalinfo[animal].images[0]}" />`;
-    modal_photo2.innerHTML = `<img src=${animalinfo[animal].images[1]}" />`;
-    modal_photo3.innerHTML = `<img src=${animalinfo[animal].images[2]}" />`;
+
+    // Audio
+    audioKid.style.display = kidToggle_outside.control.checked
+      ? "block"
+      : "none";
+    audioKid.innerHTML = `<source src="${animalinfo[animal].audio}" type="audio/mpeg" />Your browser does not support the audio element.`;
+
+    //Toggle
+    kidToggle_inside.checked = kidToggle_outside.control.checked;
+
+    //Photos
+    modal_photo1.innerHTML = `<img src="${animalinfo[animal].images[0]}" />`;
+    modal_photo2.innerHTML = `<img src="${animalinfo[animal].images[1]}" />`;
+    modal_photo3.innerHTML = `<img src="${animalinfo[animal].images[2]}" />`;
+
     modal.style.display = "block";
   }
 
+  kidToggle_inside.onclick = () => {
+    animal_name_modal.innerHTML = kidToggle_inside.checked
+      ? `${animalinfo[curAnimal].name_kid}`
+      : `${animalinfo[curAnimal].name_adult}`;
+    animal_info.innerHTML = kidToggle_inside.checked
+      ? `${animalinfo[curAnimal].kid_text}`
+      : `${animalinfo[curAnimal].adult_text}`;
+    audioKid.style.display = kidToggle_inside.checked ? "block" : "none";
+  };
+
   // When the user clicks on <span> (x), close the modal
   span.onclick = function () {
+    kidToggle_outside.control.checked = kidToggle_inside.checked;
     kidToggle_outside.style.display = "block";
     modal.style.display = "none";
   };
@@ -176,6 +212,7 @@
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
     if (event.target == modal) {
+      kidToggle_outside.control.checked = kidToggle_inside.checked;
       kidToggle_outside.style.display = "block";
       modal.style.display = "none";
     }
