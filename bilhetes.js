@@ -1,3 +1,9 @@
+function clear_session()
+{
+    sessionStorage.setItem("children_ticket_price", 0) ;
+    sessionStorage.setItem("adult_ticket_price", 0) ;
+    sessionStorage.setItem("senior_ticket_price", 0) ;
+}
 function set_price_by_age(price_inc, ageClass)
 {
     const age_class_ammount = document.getElementById(ageClass + "_ammount");
@@ -32,5 +38,5 @@ function set_price_by_age(price_inc, ageClass)
 
     document.getElementById(ageClass + "_ammount").innerText = ticket_price;
 
-    localStorage.setItem(ageClass + "_ticket_price", ticket_price);
+    sessionStorage.setItem(ageClass + "_ticket_price", ticket_price);
 }

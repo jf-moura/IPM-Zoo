@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="bilhetes.css" />
     <link rel="bilhetes_script" href="bilhetes.js" />
 
+    <script src="./bilhetes.js">
+    </script>
     <title>Lisbon's Zoo</title>
 
     <!-- Created by S-Tech04 -->
   </head>
 
-  <body>
-    <script src="./bilhetes.js">
-    </script>
+  <body onload="clear_session()">
     <nav class="header">
       <div class="logo-container">
         <a href="index.html">
@@ -109,8 +109,8 @@
     </div>
 
     <div>
-      <button id="continuar_pagamento" class="btn_pagamento"> Continuar </button>
-      <button id="voltar_atras" class="voltar_atras"> Voltar atrás </button>
+      <button id="continuar_pagamento" onclick="location.href = 'pagamento.html';" class="btn_pagamento"> Continuar </button>
+      <button id="voltar_atras" onclick="location.href = 'index.html';" class="voltar_atras"> Voltar atrás </button>
     </div>
 
 
