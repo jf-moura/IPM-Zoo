@@ -1,137 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Lisbon's Zoo</title>
 
-    <!-- Created by S-Tech04 -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Lisbon's Zoo</title>
 
-  <body>
-    <nav class="header">
-      <div class="logo-container">
-        <a href="index.html">
-          <img class="logo" src="./assets/logo_projetoIPM.png" />
-        </a>
-      </div>
-      <div class="nav-subsections">
-        <a href="PlanVisit.html">Organizar Visita</a>
-        <a href="bilhetes.html">Comprar Bilhetes</a>
-      </div>
-      <label class="toggle young-old" id="toggle_outside">
-        <input type="checkbox" class="toggle-checkbox" />
-        <div class="toggle-btn"></div>
-      </label>
-    </nav>
+  <!-- Created by S-Tech04 -->
+</head>
 
-    <div>
-      <div class="map-container">
-        <img class="map" src="./assets/map.png" />
-        <div>
-          <button class="bear-button" onclick="open_popup('bear')">
-            <img src="./assets/icons/bear.png" />
-          </button>
-          <button class="elephant-button" onclick="open_popup('elephant')">
-            <img src="./assets/icons/elephant.png" />
-          </button>
-          <button class="cheetah-button" onclick="open_popup('cheetah')">
-            <img src="./assets/icons/cheetah.png" />
-          </button>
-          <button class="giraffe-button" onclick="open_popup('giraffe')">
-            <img src="./assets/icons/giraffe.png" />
-          </button>
-          <button class="hippo-button" onclick="open_popup('hippo')">
-            <img src="./assets/icons/hippo.png" />
-          </button>
-          <button class="lion-button" onclick="open_popup('lion')">
-            <img src="./assets/icons/lion.png" />
-          </button>
-          <button class="rhino-button" onclick="open_popup('rhino')">
-            <img src="./assets/icons/rhino.png" />
-          </button>
-          <button class="tiger-button" onclick="open_popup('tiger')">
-            <img src="./assets/icons/tiger.png" />
-          </button>
-          <button class="dolphin-button" onclick="open_popup('dolphin')">
-            <img src="./assets/icons/dolphin.png" />
-          </button>
-          <button class="zebra-button" onclick="open_popup('zebra')">
-            <img src="./assets/icons/zebra.png" />
-          </button>
-          <button class="primate-button" onclick="open_popup('primate')">
-            <img src="./assets/icons/primate.png" />
-          </button>
-          <button class="deer-button" onclick="open_popup('deer')">
-            <img src="./assets/icons/deer.png" />
-          </button>
-          <button class="red-panda-button" onclick="open_popup('panda')">
-            <img src="./assets/icons/red_panda.png" />
-          </button>
-          <button class="camel-button" onclick="open_popup('camel')">
-            <img src="./assets/icons/camel.png" />
-          </button>
-        </div>
-      </div>
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header" id="modal-header">
-            <h2 id="animal-name-modal">PLACEHOLDER</h2>
-            <span class="close">&times;</span>
-            <label class="toggle-popup young-old" id="toggle_outside">
-              <input type="checkbox" class="toggle-checkbox" />
-              <div class="toggle-btn"></div>
-            </label>
-          </div>
-          <div class="modal-body" id="modal-body">
-            <div class="animal-info" id="animal_info">
-              <p>
-                InfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfoInfo
-              </p>
-            </div>
-            <div>
-              <div class="photo-1" id="photo1">
-                <img src="./assets/animals-photos/urso-1.jpg" />
-              </div>
-              <div class="photo-2" id="photo2">
-                <img src="./assets/animals-photos/urso-1.jpg" />
-              </div>
-              <div class="photo-3" id="photo3">
-                <img src="./assets/animals-photos/urso-1.jpg" />
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer" id="modal-footer">
-            <audio controls>
-              <source src="./assets/animal-audio/bear.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-            <button class="know-more">Saber Mais</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-container">
-      <a href="https://www.zoo.pt/pt/" target="_blank">
-        Website Oficial Jardim Zoológico de Lisboa
+<body>
+  <nav class="header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img class="logo" src="./assets/logo_projetoIPM.png" />
       </a>
-      <div class="footer-social-media">
-        <a
-          href="https://www.instagram.com/jardimzoologico_oficial/"
-          target="_blank"
-          >Instagram</a
-        >
-        <a
-          href="https://www.youtube.com/channel/UCtRQsozvlnEFt3rm8-Sx9Qw"
-          target="_blank"
-          >Youtube</a
-        >
+    </div>
+    <div class="nav-subsections">
+      <a href="PlanVisit.html">Organizar Visita</a>
+      <a href="bilhetes.html">Comprar Bilhetes</a>
+    </div>
+    <label class="toggle young-old" id="toggle_outside">
+      <input type="checkbox" class="toggle-checkbox" />
+      <div class="toggle-btn"></div>
+    </label>
+  </nav>
+
+  <div>
+    <div class="map-container">
+      <img class="map" src="./assets/map.png" />
+      <div>
+        <button class="bear-button" onclick="open_popup('bear')">
+          <img src="./assets/icons/bear.png" />
+        </button>
+        <button class="elephant-button" onclick="open_popup('elephant')">
+          <img src="./assets/icons/elephant.png" />
+        </button>
+        <button class="cheetah-button" onclick="open_popup('cheetah')">
+          <img src="./assets/icons/cheetah.png" />
+        </button>
+        <button class="giraffe-button" onclick="open_popup('giraffe')">
+          <img src="./assets/icons/giraffe.png" />
+        </button>
+        <button class="hippo-button" onclick="open_popup('hippo')">
+          <img src="./assets/icons/hippo.png" />
+        </button>
+        <button class="lion-button" onclick="open_popup('lion')">
+          <img src="./assets/icons/lion.png" />
+        </button>
+        <button class="rhino-button" onclick="open_popup('rhino')">
+          <img src="./assets/icons/rhino.png" />
+        </button>
+        <button class="tiger-button" onclick="open_popup('tiger')">
+          <img src="./assets/icons/tiger.png" />
+        </button>
+        <button class="dolphin-button" onclick="open_popup('dolphin')">
+          <img src="./assets/icons/dolphin.png" />
+        </button>
+        <button class="zebra-button" onclick="open_popup('zebra')">
+          <img src="./assets/icons/zebra.png" />
+        </button>
+        <button class="primate-button" onclick="open_popup('primate')">
+          <img src="./assets/icons/primate.png" />
+        </button>
+        <button class="deer-button" onclick="open_popup('deer')">
+          <img src="./assets/icons/deer.png" />
+        </button>
+        <button class="red-panda-button" onclick="open_popup('panda')">
+          <img src="./assets/icons/red_panda.png" />
+        </button>
+        <button class="camel-button" onclick="open_popup('camel')">
+          <img src="./assets/icons/camel.png" />
+        </button>
       </div>
     </div>
-  </body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header" id="modal-header">
+          <h2 id="animal-name-modal">PLACEHOLDER</h2>
+          <span class="close"><img src="./assets/close.png" /></span>
+          <label class="toggle-popup young-old" id="toggle_outside">
+            <input type="checkbox" class="toggle-checkbox" />
+            <div class="toggle-btn"></div>
+          </label>
+        </div>
+        <div class="modal-body" id="modal-body">
+          <div class="animal-info" id="animal_info">
+            <p>Info</p>
+          </div>
+          <div>
+            <div class="photo-1" id="photo1">
+              <img src="./assets/animals-photos/urso-1.jpg" />
+            </div>
+            <div class="photo-2" id="photo2">
+              <img src="./assets/animals-photos/urso-1.jpg" />
+            </div>
+            <div class="photo-3" id="photo3">
+              <img src="./assets/animals-photos/urso-1.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" id="modal-footer">
+          <audio controls>
+            <source src="./assets/animal-audio/bear.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <button class="know-more">Saber Mais</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <a href="https://www.zoo.pt/pt/" target="_blank">
+      Website Oficial Jardim Zoológico de Lisboa
+    </a>
+    <div class="footer-social-media">
+      <a href="https://www.instagram.com/jardimzoologico_oficial/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/channel/UCtRQsozvlnEFt3rm8-Sx9Qw" target="_blank">Youtube</a>
+    </div>
+  </div>
+</body>
+
 </html>
 <script>
   // Get the modal

@@ -408,14 +408,10 @@
 /* The Close Button */
 .close {
   position: absolute;
-  top: -7%;
-  right: -1.7%;
-  left: auto;
+  top: -8%;
+  right: -2%;
   transform: none;
-  width: fit-content;
-  color: #ba181b;
-  font-size: 50px;
-  font-weight: bold;
+  width: 4%;
 }
 
 .close:hover,
