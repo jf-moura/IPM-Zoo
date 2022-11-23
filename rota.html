@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="rota.css" />
+    <script type="text/javascript" src="PlanVisit.js"></script>
+    <title>Lisbon's Zoo</title>
+
+    <!-- Created by S-Tech04 -->
+  </head>
+
+  <body>
+    <nav class="header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="./assets/logo_projetoIPM.png" />
+        </a>
+      </div>
+      <div class="nav-subsections">
+        <a href="PlanVisit.html">Organizar Visita</a>
+        <a href="bilhetes.html">Comprar Bilhetes</a>
+      </div>
+      <label class="toggle young-old" id="toggle_outside">
+        <input type="checkbox" class="toggle-checkbox" />
+        <div class="toggle-btn"></div>
+      </label>
+    </nav>
+
+    <div class="ideal-route-container" id="ideal-route-container">
+      <h2>Rota Ideal</h2>
+      <ul id="ideal-route"></ul>
+      <div s>
+        <button
+          type="button"
+          class="back-button"
+          id="back-button"
+          onclick="location.href = 'PlanVisit.html';"
+        >
+          Voltar atrás
+        </button>
+        <button type="submit" class="print-button" id="print-button">
+          Imprimir
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <a href="https://www.zoo.pt/pt/" target="_blank">
+        Website Oficial Jardim Zoológico de Lisboa
+      </a>
+      <div class="footer-social-media">
+        <a
+          href="https://www.instagram.com/jardimzoologico_oficial/"
+          target="_blank"
+          >Instagram</a
+        >
+        <a
+          href="https://www.youtube.com/channel/UCtRQsozvlnEFt3rm8-Sx9Qw"
+          target="_blank"
+          >Youtube</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  displayRoute();
+</script>

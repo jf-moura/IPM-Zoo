@@ -19,7 +19,8 @@
       "./assets/pictures/elefante1.jpg",
       "./assets/pictures/elefante2.jpg",
       "./assets/pictures/elefante3.jpg"
-    ]
+    ],
+    "audio": ""
   },
   "cheetah": {
     "name_kid": "Chita",
@@ -30,7 +31,8 @@
       "./assets/pictures/chita1.jpg",
       "./assets/pictures/chita2.jpg",
       "./assets/pictures/chita3.jpg"
-    ]
+    ],
+    "audio": ""
   },
   "giraffe": {
     "name_kid": "Girafa de Angola",
@@ -41,7 +43,8 @@
       "./assets/pictures/girafa1.jpg",
       "./assets/pictures/girafa2.jpg",
       "./assets/pictures/girafa3.jpg"
-    ]
+    ],
+    "audio": ""
   },
   "hippo": {
     "name_kid": "Hipopótamo",
@@ -52,7 +55,8 @@
       "./assets/pictures/hipopotamo1.jpg",
       "./assets/pictures/hipopotamo2.jpg",
       "./assets/pictures/hipopotamo3.jpg"
-    ]
+    ],
+    "audio": ""
   },
   "lion": {
     "name_kid": "Leão Africano",
@@ -63,12 +67,20 @@
       "./assets/pictures/leao1.jpg",
       "./assets/pictures/leao2.jpg",
       "./assets/pictures/leao3.jpg"
-    ]
+    ],
+    "audio": ""
   },
   "rhino": {
-    "name": "Rhinoceros",
+    "name_kid": "Rinoceronte branco",
+    "name_adult": "Ceratotherium simum (Rinoceronte branco)",
     "adult_text": "ADULT ADULT",
-    "kid_text": "KID KID"
+    "kid_text": "KID KID",
+    "images": [
+      "./assets/pictures/rino1.jpg",
+      "./assets/pictures/rino2.jpg",
+      "./assets/pictures/rino3.jpg"
+    ],
+    "audio": ""
   },
   "tiger": {
     "name": "Tiger",
