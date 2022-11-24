@@ -96,6 +96,8 @@ label {
   cursor: pointer;
   font-size: 17px;
   vertical-align: middle;
+
+  margin-left: -30vw;
 }
 
 .btndiv

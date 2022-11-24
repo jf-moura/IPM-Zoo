@@ -11,7 +11,7 @@
   cursor: pointer;
   font-size: 15px;
 
-  margin-left: -100px;
+  margin-left: -100vh;
 
   float:right !important;
 }

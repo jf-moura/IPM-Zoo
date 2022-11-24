@@ -4,13 +4,13 @@ function submit_billing()
     const email = document.getElementById('email');
 
     const loc = document.getElementById('loc');
-    const cntr = document.getElementById('cntr');
+    const cntr = document.getElementById('country');
 
 
     sessionStorage.setItem("fname", fname.value);
     sessionStorage.setItem("email", email.value);
     sessionStorage.setItem("loc", loc.value);
-    sessionStorage.setItem("cntr", cntr.value);
+    sessionStorage.setItem("contry", cntr.value);
 
 
 }
@@ -33,6 +33,7 @@ function update_cart()
 
         i += num_children_tickets;
         total += parseFloat(children_amm);
+        sessionStorage.setItem("child_amm", num_children_tickets);
     }
 
     if(adult_amm != null && adult_amm != 0)
@@ -41,6 +42,8 @@ function update_cart()
         cart.innerHTML += "<p>Bilhetes Adulto (" + num_adult_tickets+")<span class=\"price\">"+ adult_amm+ " €</span></p>";
         i += num_adult_tickets;
         total += parseFloat(adult_amm);
+
+        sessionStorage.setItem("adult_amm", num_adult_tickets);
     }
 
 
@@ -52,12 +55,14 @@ function update_cart()
         cart.innerHTML += "<p>Bilhetes Sénior ("+ num_senior_tickets+") <span class=\"price\">"+ senior_amm+ " €</span></p>";
         i += num_senior_tickets;
         total += parseFloat(senior_amm);
+
+        sessionStorage.setItem("senior_amm", num_senior_tickets);
     }
 
     num_items = document.getElementById("num_items");
     num_items.innerHTML += "<b>" + i + " items </b> <br> </br>"
 
     valor_total = document.getElementById("valor_total");
-    valor_total.innerHTML = total + " €"
+    valor_total.innerHTML = total.toFixed(2) + " €"
 
 }

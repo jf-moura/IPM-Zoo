@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="pagamento.css" />
+
     <script src="./pagamento.js"></script>
+    <script src="./pdf.js"></script>
     <title>Lisbon's Zoo</title>
 
     <!-- Created by S-Tech04 -->
@@ -21,7 +23,7 @@
       </div>
       <div class="nav-subsections">
         <a href="PlanVisit.html">Organizar Visita</a>
-        <a href="bilhetes.html">Comprar Bilhetes</a>
+        <a href="bilheteira.html">Comprar Bilhetes</a>
       </div>
       <label class="toggle young-old" id="toggle_outside">
         <input type="checkbox" class="toggle-checkbox" />
@@ -32,7 +34,7 @@
     <div class="row">
       <div class="col-75">
         <div class="container">
-          <form id="billing_form" onsubmit="submit_billing()">
+          <form id="billing_form" onsubmit="submit_billing();">
             <div class="row">
               <div class="col-50">
                 <h3>Dados do cliente</h3>
@@ -57,6 +59,8 @@
                   required
                 />
                 <label for="adr"
+                />
+                <label for="loc"
                   ><i class="fa fa-address-card-o"></i> Localidade</label
                 >
                 <input
@@ -65,7 +69,7 @@
                   name="address"
                   placeholder="A sua localidade"
                 />
-                <label for="adr"
+                <label for="country"
                   ><i class="fa fa-address-card-o"></i> País</label
                 >
 
@@ -383,24 +387,6 @@
                 </div>
               </div>
             </div>
-            <div class="btndiv">
-              <button
-                type="submit"
-                value="Voltar atrás"
-                class="btn"
-                onclick="location.href = 'bilhetes.html'"
-              >
-                Voltar atrás
-              </button>
-              <button
-                type="submit"
-                value="Continuar Compra"
-                class="btn"
-                onsubmit="submit_billing()"
-              >
-                Continuar compra
-              </button>
-            </div>
           </form>
         </div>
       </div>
@@ -426,6 +412,22 @@
       </div>
     </div>
 
+    <div class="btndiv">
+      <button
+              value="Voltar atrás"
+              class="btn"
+              onclick="location.href = 'bilheteira.html'"
+      >
+        Voltar atrás
+      </button>
+      <button
+              value="Continuar Compra"
+              class="btn"
+              onclick="submit_billing(); location.href = 'bilhetes.html'"
+      >
+        Continuar compra
+      </button>
+    </div>
     <div class="footer-container">
       <a href="https://www.zoo.pt/pt/" target="_blank">
         Website Oficial Jardim Zoológico de Lisboa
