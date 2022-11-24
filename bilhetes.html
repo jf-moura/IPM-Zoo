@@ -1,135 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="bilhetes.css" />
-    <link rel="bilhetes_script" href="bilhetes.js" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="bilheteira.css" />
 
-    <script src="./bilhetes.js">
-    </script>
-    <title>Lisbon's Zoo</title>
-
-    <!-- Created by S-Tech04 -->
-  </head>
-
-  <body onload="clear_session()">
-    <nav class="header">
-      <div class="logo-container">
-        <a href="index.html">
-          <img class="logo" src="./assets/logo_projetoIPM.png" />
-        </a>
-      </div>
-      <div class="nav-subsections">
-        <a href="#">Organizar Visita</a>
-        <a href="#">Comprar Bilhetes</a>
-      </div>
-      <label class="toggle young-old" id="toggle_outside">
-        <input type="checkbox" class="toggle-checkbox" />
-        <div class="toggle-btn"></div>
-      </label>
-    </nav>
+  <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+  <script src="https://unpkg.com/downloadjs@1.4.7"></script>
 
 
-    <div class="div_table">
-      <table style="top=100px; width:50%; margin-left:auto; margin-right:auto;" class="table">
-        <thead>
-          <tr></tr>
-          <tr scope="col" >
-            <label for="" class="tableheader"> Preço </label>
-          </tr>
-          <tr></tr>
-        </thead>
+  <script>
+    const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
 
-        <colgroup>
-          <col class = "col1">
-          <col class = "col2">
-          <col class = "col3">
-        </colgroup>
+    async function modifyPdf() {
+      // Fetch an existing PDF document
+      console.log("bola")
+      const url = 'https://ionchirica.com/ticket_template.pdf'
+      const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
 
-        <tbody>
-          <td>
-            <label for=""> Criança (3 - 12 Anos)</label>
-            <label for="" class = "precoC preco"> 15.68 </label>
-          </td>
-          <td class = "form-inline" style="width:150px;">
-            <div class="plus-minus-btn" style="float:right; width:25px;">
-              <button id="children_amm_inc" onclick="set_price_by_age(true, 'children')" class="btn btn-light"> + </button>
-            </div>
-            <div style="float:right; width:80px;">
-              <input id="children_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
-            </div>
+      // Load a PDFDocument from the existing PDF bytes
+      const pdfDoc = await PDFDocument.load(existingPdfBytes)
 
-            <div class="plus-minus-btn" style="float:right; width:05px;">
-              <button id="children_amm_dec" onclick="set_price_by_age(false, 'children')" class="btn btn-light"> - </button>
-            </div>
-          </td>
-        </tbody>
+      // Embed the Helvetica font
+      const helveticaFont = await pdfDoc.embedFont(StandardFonts.Courier)
 
-        <tbody class= "t-body">
-          <td style="width:10px;">
-            <label for=""> Adulto (13 - 64 Anos)</label>
-            <label for="" class="precoA preco"> 25.18 </label>
-          </td>
-          <td class = "form-inline" style="width:150px;">
-            <div class="plus-minus-btn" style="float:right; width:25px;">
-              <button id="adul_amm_inc" onclick="set_price_by_age(true, 'adult')" class="btn btn-light"> + </button>
-            </div>
-            <div style="float:right; width:80px;">
-              <input id="adult_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
-            </div>
+      // Get the first page of the document
+      const pages = pdfDoc.getPages()
+      const firstPage = pages[0]
 
-            <div class="plus-minus-btn" style="float:right; width:05px;">
-              <button id="adult_amm_dec" onclick="set_price_by_age(false, 'adult')" class="btn btn-light"> - </button>
-            </div>
-          </td>
-        </tbody>
+      // Get the width and height of the first page
+      const {width, height} = firstPage.getSize()
 
-        <tbody>
-          <td>
-            <label for=""> Sénior (+65 Anos)</label>
-            <label for="" class="precoS preco"> 18.05 </label>
-          </td>
-          <td class = "form-inline" style="width:150px;">
-            <div class="plus-minus-btn" style="float:right; width:25px;">
-              <button id="senior_amm_inc" onclick="set_price_by_age(true, 'senior')" class="btn btn-light"> + </button>
-            </div>
-            <div style="float:right; width:80px;">
-              <input id="senior_ammount" class="inp-style amm-width" type="number" name="" value="0" min="0">
-            </div>
+      // Draw a string of text diagonally across the first page
+      let name = sessionStorage.getItem("fname");
 
-            <div class="plus-minus-btn" style="float:right; width:05px;">
-              <button id="senior_amm_dec" onclick="set_price_by_age(false, 'senior')" class="btn btn-light"> - </button>
-            </div>
-          </td>
-        </tbody>
-      </table>
-    </div>
+      let c_amm = sessionStorage.getItem("child_amm") ? parseInt( sessionStorage.getItem("child_amm") ) : null;
+      let a_amm = sessionStorage.getItem("adult_amm") ? parseInt( sessionStorage.getItem("adult_amm") ) : null;
+      let s_amm = sessionStorage.getItem("senior_amm") ? parseInt( sessionStorage.getItem("senior_amm") ) : null;
 
-    <div>
-      <button id="continuar_pagamento" onclick="location.href = 'pagamento.html';" class="btn_pagamento"> Continuar </button>
-      <button id="voltar_atras" onclick="location.href = 'index.html';" class="voltar_atras"> Voltar atrás </button>
-    </div>
+      var names = name.split(/\s+/);
+      names[0] = names[0].substr(0, 1) + ".";
+      var name_abbr = names.join(' ');
+
+      console.log(name_abbr)
+      firstPage.drawText(name_abbr, {
+        x:  width - 59,
+        y: height / 3 - 35,
+        size: 7,
+        font: helveticaFont,
+        color: rgb(0,0,0),
+        rotate: degrees(90),
+      })
+
+      if(c_amm)
+      firstPage.drawText(c_amm + " criança(s)", {
+        x:  width - 70,
+        y: height / 3 + 45,
+        size: 7,
+        font: helveticaFont,
+        color: rgb(0,0,0),
+        rotate: degrees(90),
+      })
+
+      if(a_amm)
+        firstPage.drawText(a_amm + " adulto(s)", {
+          x:  width - 60,
+          y: height / 3 + 45,
+          size: 7,
+          font: helveticaFont,
+          color: rgb(0,0,0),
+          rotate: degrees(90),
+        })
+
+      if(s_amm)
+        firstPage.drawText(s_amm + " séniores(s)", {
+          x:  width - 50,
+          y: height / 3 + 45,
+          size: 7,
+          font: helveticaFont,
+          color: rgb(0,0,0),
+          rotate: degrees(90),
+        })
+
+      // Serialize the PDFDocument to bytes (a Uint8Array)
+      const pdfBytes = await pdfDoc.save()
+
+      // Trigger the browser to download the PDF document
+      download(pdfBytes, "pdf-lib_modification_example.pdf", "application/pdf");
+    }
+  </script>
+  <title>Lisbon's Zoo</title>
+
+  <!-- Created by S-Tech04 -->
+</head>
+
+<body>
+<nav class="header">
+  <div class="logo-container">
+    <a href="index.html">
+      <img class="logo" src="./assets/logo_projetoIPM.png" />
+    </a>
+  </div>
+  <div class="nav-subsections">
+    <a href="#">Organizar Visita</a>
+    <a href="bilheteira.html">Comprar Bilhetes</a>
+  </div>
+  <label class="toggle young-old" id="toggle_outside">
+    <input type="checkbox" class="toggle-checkbox" />
+    <div class="toggle-btn"></div>
+  </label>
+</nav>
 
 
-    <div class="footer-container">
-      <a href="https://www.zoo.pt/pt/" target="_blank">
-        Website Oficial Jardim Zoológico de Lisboa
-      </a>
-      <div class="footer-social-media">
-        <a
-          href="https://www.instagram.com/jardimzoologico_oficial/"
-          target="_blank"
-          >Instagram</a
-                      >
-        <a
-          href="https://www.youtube.com/channel/UCtRQsozvlnEFt3rm8-Sx9Qw"
-          target="_blank"
-          >Youtube</a
-                    >
-      </div>
-    </div>
-  </body>
+<div>
+  <button id="continuar_pagamento" onclick="modifyPdf();" class="btn_pagamento"> Imprimir bilhetes </button>
+</div>
+
+<div class="footer-container">
+  <a href="https://www.zoo.pt/pt/" target="_blank">
+    Website Oficial Jardim Zoológico de Lisboa
+  </a>
+  <div class="footer-social-media">
+    <a
+            href="https://www.instagram.com/jardimzoologico_oficial/"
+            target="_blank"
+    >Instagram</a
+    >
+    <a
+            href="https://www.youtube.com/channel/UCtRQsozvlnEFt3rm8-Sx9Qw"
+            target="_blank"
+    >Youtube</a
+    >
+  </div>
+</div>
+</body>
 </html>
