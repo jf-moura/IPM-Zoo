@@ -15,29 +15,30 @@
     <script>
       
       const locations = [
-      {animalName: "zebra", x:0, y:0},
-      {animalName: "tiger", x:0, y:0},
-      {animalName: "dolphin", x:0, y:0},
-      {animalName: "camel", x:0, y:0},
-      {animalName: "giraffe", x:0, y:0},
-      {animalName: "red-panda", x:0, y:0},
-      {animalName: "elephant", x:0, y:0},
-      {animalName: "hippo", x:0, y:0},
-      {animalName: "primate", x:0, y:0},
-      {animalName: "lion", x:0, y:0},
-      {animalName: "cheetah", x:0, y:0},
-      {animalName: "deer", x:0, y:0},
-      {animalName: "bear", x:0, y:0},
-      {animalName: "rhino", x:0, y:0}
+      {animalName: "zebra", x:290, y:158},
+      {animalName: "tiger", x:250, y:167},
+      {animalName: "dolphin", x:220, y:105},
+      {animalName: "camel", x:130, y:155},
+      {animalName: "giraffe", x:135, y:226},
+      {animalName: "red-panda", x:150, y:260},
+      {animalName: "elephant", x:147, y:300},
+      {animalName: "hippo", x:183, y:335},
+      {animalName: "lion", x:150, y:368},
+      {animalName: "cheetah", x:105, y:413},
+      {animalName: "primate", x:247, y:305},
+      {animalName: "deer", x:300, y:380},
+      {animalName: "bear", x:320, y:490},
+      {animalName: "rhino", x:325, y:318}
     ]
+
+    const numPathPattern = "https://ionchirica.com/ipm/numbers/"
       
       
       const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
   
       async function modifyRoutePdf() {
         // Fetch an existing PDF document
-        console.log("bola")
-        const url = 'https://ionchirica.com/ticket_template.pdf'
+        const url = 'https://ionchirica.com/ipm/pdf_rota.pdf'
         const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
   
         // Load a PDFDocument from the existing PDF bytes
@@ -54,13 +55,28 @@
         const {width, height} = firstPage.getSize()
   
         // Draw a string of text diagonally across the first page
-        let animalsOrdered = sessionStorage.getItem("oAnimals");
-  
+        let animalsOrdered = sessionStorage.getItem("oAnimals").split(",");
         
         for (let i = 0; i < animalsOrdered.length; i++) {
+          let numPathFinal = numPathPattern+(i+1)+".png"
+          let imageBytes = await fetch(numPathFinal).then((res) => res.arrayBuffer())
+          let pngImage = await pdfDoc.embedPng(imageBytes)
+          const pngDims = pngImage.scale(0.2)
           
+          let animalLocation
+           locations.map((entry) => { entry.animalName === animalsOrdered[i] ? animalLocation = entry : null})
+          console.log(animalLocation)
+
+          firstPage.drawImage(pngImage, {
+              x: animalLocation.x,
+              y: animalLocation.y,
+              width: pngDims.width,
+              height: pngDims.height,
+            })
           
         }
+
+
 
 
 

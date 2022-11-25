@@ -8,9 +8,9 @@ const orderToVisit = [
   "red-panda",
   "elephant",
   "hippo",
-  "primate",
   "lion",
   "cheetah",
+  "primate",
   "deer",
   "bear",
   "rhino"
