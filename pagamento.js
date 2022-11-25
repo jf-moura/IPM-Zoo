@@ -10,7 +10,11 @@ function submit_billing()
     sessionStorage.setItem("fname", fname.value);
     sessionStorage.setItem("email", email.value);
     sessionStorage.setItem("loc", loc.value);
-    sessionStorage.setItem("contry", cntr.value);
+    var e = document.getElementById("country");
+    var value = e.value;
+    var text = e.options[e.selectedIndex].text;
+
+    sessionStorage.setItem("country", text);
 
 
 }
@@ -58,6 +62,8 @@ function update_cart()
 
         sessionStorage.setItem("senior_amm", num_senior_tickets);
     }
+
+    sessionStorage.setItem("total", total);
 
     num_items = document.getElementById("num_items");
     num_items.innerHTML += "<b>" + i + " items </b> <br> </br>"
