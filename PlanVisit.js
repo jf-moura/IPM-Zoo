@@ -1,19 +1,19 @@
 //The orderToVisit[0] animal will be the animal to be visited at first place, the orderToVisit[1] is the second and so on
 const orderToVisit = [
-  "bear",
-  "elephant",
-  "cheetah",
-  "giraffe",
-  "hippo",
-  "lion",
-  "rhino",
+  "zebra",
   "tiger",
   "dolphin",
-  "zebra",
+  "camel",
+  "giraffe",
+  "red-panda",
+  "elephant",
+  "hippo",
+  "lion",
+  "cheetah",
   "primate",
   "deer",
-  "red-panda",
-  "camel",
+  "bear",
+  "rhino"
 ];
 
 const NO_ANIMALS_SELECTED =

@@ -9,6 +9,93 @@
     <script type="text/javascript" src="PlanVisit.js"></script>
     <title>Lisbon's Zoo</title>
 
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+  <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+
+    <script>
+      
+      const locations = [
+      {animalName: "zebra", x:290, y:158},
+      {animalName: "tiger", x:250, y:167},
+      {animalName: "dolphin", x:220, y:105},
+      {animalName: "camel", x:130, y:155},
+      {animalName: "giraffe", x:135, y:226},
+      {animalName: "red-panda", x:150, y:260},
+      {animalName: "elephant", x:147, y:300},
+      {animalName: "hippo", x:183, y:335},
+      {animalName: "lion", x:150, y:368},
+      {animalName: "cheetah", x:105, y:413},
+      {animalName: "primate", x:247, y:305},
+      {animalName: "deer", x:300, y:380},
+      {animalName: "bear", x:320, y:490},
+      {animalName: "rhino", x:325, y:318}
+    ]
+
+    const numPathPattern = "https://ionchirica.com/ipm/numbers/"
+      
+      
+      const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
+  
+      async function modifyRoutePdf() {
+        // Fetch an existing PDF document
+        const url = 'https://ionchirica.com/ipm/pdf_rota.pdf'
+        const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
+  
+        // Load a PDFDocument from the existing PDF bytes
+        const pdfDoc = await PDFDocument.load(existingPdfBytes)
+  
+        // Embed the Helvetica font
+        const helveticaFont = await pdfDoc.embedFont(StandardFonts.Courier)
+  
+        // Get the first page of the document
+        const pages = pdfDoc.getPages()
+        const firstPage = pages[0]
+  
+        // Get the width and height of the first page
+        const {width, height} = firstPage.getSize()
+  
+        // Draw a string of text diagonally across the first page
+        let animalsOrdered = sessionStorage.getItem("oAnimals").split(",");
+        
+        for (let i = 0; i < animalsOrdered.length; i++) {
+          let numPathFinal = numPathPattern+(i+1)+".png"
+          let imageBytes = await fetch(numPathFinal).then((res) => res.arrayBuffer())
+          let pngImage = await pdfDoc.embedPng(imageBytes)
+          const pngDims = pngImage.scale(0.2)
+          
+          let animalLocation
+           locations.map((entry) => { entry.animalName === animalsOrdered[i] ? animalLocation = entry : null})
+          console.log(animalLocation)
+
+          firstPage.drawImage(pngImage, {
+              x: animalLocation.x,
+              y: animalLocation.y,
+              width: pngDims.width,
+              height: pngDims.height,
+            })
+          
+        }
+
+
+
+
+
+
+
+
+  
+        // Serialize the PDFDocument to bytes (a Uint8Array)
+        const pdfBytes = await pdfDoc.save()
+  
+        // Trigger the browser to download the PDF document
+        download(pdfBytes, "pdf-lib_modification_example.pdf", "application/pdf");
+      }
+    </script>
+
+
+
+
+
     <!-- Created by S-Tech04 -->
   </head>
 
@@ -41,8 +128,8 @@
         >
           Voltar atrás
         </button>
-        <button type="submit" class="print-button" id="print-button">
-          Imprimir
+        <button type="submit" class="print-button" id="print-button" onclick="modifyRoutePdf();">
+          Descarregar Rota
         </button>
       </div>
     </div>
