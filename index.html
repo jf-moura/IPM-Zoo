@@ -145,10 +145,23 @@
   const span = document.getElementsByClassName("close")[0];
 
   // Get file that holds info on all animals
-  const request = new XMLHttpRequest();
-  request.open("GET", "./animalinfo.json", false);
-  request.send(null);
-  const animalinfo = JSON.parse(request.responseText);
+  function loadJSON(callback) {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open("GET", "animalinfo.json", true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+      if (xobj.readyState == 4 && xobj.status == "200") {
+        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+        callback(xobj.responseText);
+      }
+    };
+    xobj.send(null);
+  }
+
+  let animalinfo = null;
+  loadJSON(function (response) {
+    animalinfo = JSON.parse(response);
+  });
 
   const kidToggle_outside = document.getElementById("toggle_outside");
   const kidToggle_inside = document.getElementById("toggle_inside");
