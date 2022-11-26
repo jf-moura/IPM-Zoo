@@ -106,7 +106,9 @@
           <audio controls id="audio_kid">
             <source src="" type="audio/mpeg" />
           </audio>
-          <button class="know-more">Saber Mais</button>
+          <button class="know-more" id="know_more">
+            <a href="" target="_blank">Saber Mais</a>
+          </button>
         </div>
       </div>
     </div>
@@ -154,6 +156,8 @@
   const audioKid = document.getElementById("audio_kid");
   const audioKid_source = document.getElementById("audio_kid_source");
 
+  const knowMore_button = document.getElementById("know_more");
+
   var curAnimal = null;
 
   function open_popup(animal) {
@@ -167,12 +171,18 @@
     animal_info.innerHTML = kidToggle_outside.control.checked
       ? `${animalinfo[animal].kid_text}`
       : `${animalinfo[animal].adult_text}`;
+    knowMore_button.innerHTML = `            <a
+              href="${animalinfo[animal].link}"
+              target="_blank"
+              >Saber Mais</a
+            >`;
 
     // Audio
     audioKid.style.display = kidToggle_outside.control.checked
       ? "block"
       : "none";
     audioKid.innerHTML = `<source src="${animalinfo[animal].audio}" type="audio/mpeg" />Your browser does not support the audio element.`;
+    audioKid.load();
 
     //Toggle
     kidToggle_inside.checked = kidToggle_outside.control.checked;
@@ -199,6 +209,7 @@
   span.onclick = function () {
     kidToggle_outside.control.checked = kidToggle_inside.checked;
     kidToggle_outside.style.display = "block";
+    audioKid.pause();
     modal.style.display = "none";
   };
 
@@ -207,6 +218,7 @@
     if (event.target == modal) {
       kidToggle_outside.control.checked = kidToggle_inside.checked;
       kidToggle_outside.style.display = "block";
+      audioKid.pause();
       modal.style.display = "none";
     }
   };
