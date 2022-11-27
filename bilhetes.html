@@ -164,11 +164,14 @@
 <div class="invoice-box">
   <table cellpadding="0" cellspacing="0">
     <tr class="top">
-      <td colspan="2">
+      <td colspan="3">
         <table>
           <tr>
             <td class="title">
               <img src="assets/qr-code.png" style="width: 50%; max-width: 150px; margin: auto" />
+            </td>
+            <td>
+              <button id="continuar_pagamento" onclick="modifyPdf();" class="btn_pagamento"> Imprimir bilhetes </button>
             </td>
             <td id = "inv_inf">
 
@@ -217,9 +220,6 @@
 
     </tr>
   </table>
-</div>
-<div>
-  <button id="continuar_pagamento" onclick="modifyPdf();" class="btn_pagamento"> Imprimir bilhetes </button>
 </div>
 
 <div class="footer-container">

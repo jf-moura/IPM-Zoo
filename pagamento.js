@@ -60,10 +60,10 @@ function update_cart()
         i += num_senior_tickets;
         total += parseFloat(senior_amm);
 
-        sessionStorage.setItem("senior_amm", num_senior_tickets);
+        sessionStorage.setItem("senior_amm", num_senior_tickets.toFixed());
     }
 
-    sessionStorage.setItem("total", total);
+    sessionStorage.setItem("total", total.toFixed(2));
 
     num_items = document.getElementById("num_items");
     num_items.innerHTML += "<b>" + i + " items </b> <br> </br>"

@@ -4,6 +4,34 @@ function clear_session()
     sessionStorage.setItem("adult_ticket_price", 0) ;
     sessionStorage.setItem("senior_ticket_price", 0) ;
 }
+
+function validate()
+{
+    const c_amm = sessionStorage.getItem("children_ticket_price");
+    const s_amm = sessionStorage.getItem("senior_ticket_price");
+    const a_amm = sessionStorage.getItem("adult_ticket_price");
+
+    if (!c_amm && !a_amm && !s_amm)
+    {
+        alert("Tem de selecionar pelo menos um bilhete.")
+        return false;
+
+    }
+
+    const c_int = c_amm ? parseInt(c_amm) : 0;
+    const a_int = a_amm ? parseInt(a_amm) : 0;
+    const s_int = s_amm ? parseInt(s_amm) : 0;
+
+    if(c_int === 0 && a_int === 0 && s_int === 0)
+    {
+        alert("Tem de selecionar pelo menos um bilhete.")
+        return false;
+    }
+
+    window.location.href = "./pagamento.html"
+    return true;
+}
+
 function set_price_by_age(price_inc, ageClass)
 {
     const age_class_ammount = document.getElementById(ageClass + "_ammount");
@@ -38,5 +66,5 @@ function set_price_by_age(price_inc, ageClass)
 
     document.getElementById(ageClass + "_ammount").innerText = ticket_price;
 
-    sessionStorage.setItem(ageClass + "_ticket_price", ticket_price);
+    sessionStorage.setItem(ageClass + "_ticket_price", ticket_price.toFixed(2));
 }
