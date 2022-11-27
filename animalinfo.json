@@ -130,55 +130,55 @@
     "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/zebra-de-grevy/"
   },
   "primate": {
-    "name_kid": "Rinoceronte branco",
-    "name_adult": "Rinoceronte branco (<i>Ceratotherium simum</i>)",
-    "adult_text": "<br>É o segundo maior animal terrestre, sendo o macho maior do que a fêmea. Tem pelo apenas nas orelhas e na ponta da cauda. O lábio superior é reto e preênsil. Os dois chifres frontais são compostos por queratina e o maior pode atingir 1,5 m de comprimento.</br><br>É a espécie de rinoceronte mais sociável. As fêmeas estão geralmente acompanhadas pelas suas crias mais recentes e os machos dominantes são solitários. Podem formar-se grupos temporários de 14 ou mais animais. É territorial e um macho defende o seu território de outro, apesar do confronto físico ser evitado.</br><br>Depois do período de corte e acasalamento, que pode durar até 3 semanas, a fêmea pode deixar o território do macho. Quando ameaçada, a progenitora faz guarda à sua cria caso contrário deixa-a andar livremente nas suas imediações. A cria pode ser amamentada até aos 2 anos de idade.</br>",
+    "name_kid": "Área dos macacos",
+    "name_adult": "Área dos primatas",
+    "adult_text": "<br>O Macaco-de-brazza distingue-se pela coroa negra de onde se destaca um crescente de cor alaranjada acima das sobrancelhas. As nádegas e a zona interior das coxas estão cobertas por pêlo branco. O macho tende a ser maior do que a fêmea. Ambos os sexos apresentam barba e focinho brancos.</br><br>O Gorila ocidental das terras baixas é o maior de todos os primatas. A observação do nariz permite distinguir indivíduos. Os machos, são maiores que as fêmeas, e o dominante do grupo desenvolve uma pelagem acinzentada no dorso, é o dorso-prateado. Tem uma dieta herbívora variada.</br><br>O Chimpanzé macho é ligeiramente maior do que a fêmea. A pelagem é negra, relativamente longa e, geralmente, ambos os sexos apresentam uma barba branca. As crias nascem com a pele rosada na face e nas mãos e com um tufo caudal de pelos brancos, que desaparece até à idade adulta.    </br>",
     "kid_text": "KID KID",
     "images": [
-      "./assets/pictures/zebra1.jpg",
-      "./assets/pictures/zebra2.jpg",
-      "./assets/pictures/zebra3.jpg"
+      "./assets/pictures/macaco1.jpg",
+      "./assets/pictures/macaco2.jpg",
+      "./assets/pictures/macaco3.jpg"
     ],
-    "audio": "./assets/audio/zebra.mp3",
-    "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/zebra-de-grevy/"
+    "audio": "./assets/audio/macaco.mp3",
+    "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/chimpanze/"
   },
   "deer": {
-    "name_kid": "Rinoceronte branco",
-    "name_adult": "Rinoceronte branco (<i>Ceratotherium simum</i>)",
-    "adult_text": "<br>É o segundo maior animal terrestre, sendo o macho maior do que a fêmea. Tem pelo apenas nas orelhas e na ponta da cauda. O lábio superior é reto e preênsil. Os dois chifres frontais são compostos por queratina e o maior pode atingir 1,5 m de comprimento.</br><br>É a espécie de rinoceronte mais sociável. As fêmeas estão geralmente acompanhadas pelas suas crias mais recentes e os machos dominantes são solitários. Podem formar-se grupos temporários de 14 ou mais animais. É territorial e um macho defende o seu território de outro, apesar do confronto físico ser evitado.</br><br>Depois do período de corte e acasalamento, que pode durar até 3 semanas, a fêmea pode deixar o território do macho. Quando ameaçada, a progenitora faz guarda à sua cria caso contrário deixa-a andar livremente nas suas imediações. A cria pode ser amamentada até aos 2 anos de idade.</br>",
+    "name_kid": "Veado-da-birmânia",
+    "name_adult": "Veado-da-birmânia (<i>Rucervus eldii thamin</i>)",
+    "adult_text": "<br>A pelagem torna-se mais escura e longa no inverno. As armações, apenas presentes nos machos, são longas, pouco ramificadas, de perfil côncavo e caducas (caem anualmente). As fêmeas são mais claras e os juvenis apresentam pintas claras que desvanecem com a idade.</br><br>É territorial e os machos vivem geralmente de forma solitária, enquanto as fêmeas formam pequenas unidades familiares com as suas crias. Na estação quente formam grupos mistos, com multimachos que podem chegar a 50-70 animais da espécie. Uma das principais formas de comunicação é através de secreções glandulares.</br><br>A época reprodutiva corresponde, no habitat natural, a fevereiro-maio. Durante esta época, os machos formam haréns, desenvolvem uma pelagem longa no pescoço e as armações atingem o seu tamanho máximo. A cria complementa a sua dieta com plantas desde perto dos 2 meses.</br>",
     "kid_text": "KID KID",
     "images": [
-      "./assets/pictures/rino1.jpg",
-      "./assets/pictures/rino2.jpg",
-      "./assets/pictures/rino3.jpg"
+      "./assets/pictures/veado1.jpg",
+      "./assets/pictures/veado2.jpg",
+      "./assets/pictures/veado3.jpg"
     ],
-    "audio": "./assets/audio/rino.mp3",
-    "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/rinoceronte-branco/"
+    "audio": "./assets/audio/veado.mp3",
+    "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/veado-da-birmania/"
   },
   "panda": {
-    "name_kid": "Rinoceronte branco",
-    "name_adult": "Rinoceronte branco (<i>Ceratotherium simum</i>)",
-    "adult_text": "<br>É o segundo maior animal terrestre, sendo o macho maior do que a fêmea. Tem pelo apenas nas orelhas e na ponta da cauda. O lábio superior é reto e preênsil. Os dois chifres frontais são compostos por queratina e o maior pode atingir 1,5 m de comprimento.</br><br>É a espécie de rinoceronte mais sociável. As fêmeas estão geralmente acompanhadas pelas suas crias mais recentes e os machos dominantes são solitários. Podem formar-se grupos temporários de 14 ou mais animais. É territorial e um macho defende o seu território de outro, apesar do confronto físico ser evitado.</br><br>Depois do período de corte e acasalamento, que pode durar até 3 semanas, a fêmea pode deixar o território do macho. Quando ameaçada, a progenitora faz guarda à sua cria caso contrário deixa-a andar livremente nas suas imediações. A cria pode ser amamentada até aos 2 anos de idade.</br>",
+    "name_kid": "Panda Vermelho",
+    "name_adult": "Panda vermelho (<i>Ailurus fulgens</i>)",
+    "adult_text": "<br>Caracteriza-se pela cabeça redonda, focinho curto, orelhas eretas e triangulares, e cauda espessa e anelada. Tem um falso polegar, formado por uma extensão do osso sesamóide, que utiliza para, por exemplo, arrancar folhas de bambu. De difícil classificação taxonómica, tem dentição de omnívoro, tubo digestivo de carnívoro e dieta principalmente herbívora.</br><br>É uma espécie tímida e territorial. Descansa em ramos de árvore onde se apoia apenas com o corpo, deixando as patas suspensas. A marcação através da urina, fezes e secreções glandulares é uma forma de comunicação significativa. 80% da sua dieta é composta por folhas de bambu, suplementada com frutos, rebentos, insetos, ovos e crias de aves.</br><br>Encontram-se apenas para acasalar, na época de acasalamento, de janeiro a março. A fêmea só está recetiva durante um curto período de 12 a 36 horas, em que a ovulação é induzida pela cópula. Os machos intensificam a marcação com urina e secreções glandulares, esfregando a zona anal nas árvores do seu território. A cópula ocorre no solo.</br>",
     "kid_text": "KID KID",
     "images": [
-      "./assets/pictures/rino1.jpg",
-      "./assets/pictures/rino2.jpg",
-      "./assets/pictures/rino3.jpg"
+      "./assets/pictures/panda1.jpg",
+      "./assets/pictures/panda2.jpg",
+      "./assets/pictures/panda3.jpg"
     ],
-    "audio": "./assets/audio/rino.mp3",
-    "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/rinoceronte-branco/"
+    "audio": "./assets/audio/panda.mp3",
+    "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/panda-vermelho/"
   },
   "camel": {
-    "name_kid": "Rinoceronte branco",
-    "name_adult": "Rinoceronte branco (<i>Ceratotherium simum</i>)",
-    "adult_text": "<br>É o segundo maior animal terrestre, sendo o macho maior do que a fêmea. Tem pelo apenas nas orelhas e na ponta da cauda. O lábio superior é reto e preênsil. Os dois chifres frontais são compostos por queratina e o maior pode atingir 1,5 m de comprimento.</br><br>É a espécie de rinoceronte mais sociável. As fêmeas estão geralmente acompanhadas pelas suas crias mais recentes e os machos dominantes são solitários. Podem formar-se grupos temporários de 14 ou mais animais. É territorial e um macho defende o seu território de outro, apesar do confronto físico ser evitado.</br><br>Depois do período de corte e acasalamento, que pode durar até 3 semanas, a fêmea pode deixar o território do macho. Quando ameaçada, a progenitora faz guarda à sua cria caso contrário deixa-a andar livremente nas suas imediações. A cria pode ser amamentada até aos 2 anos de idade.</br>",
+    "name_kid": "Camelo",
+    "name_adult": "Camelo (<i>Camelus ferus</i>)",
+    "adult_text": "<br>Adaptada ao deserto rochoso e árido, é inconfundível pelas suas duas bossas. O pelo cai com o aumento da temperatura. Os olhos estão protegidos por sobrancelhas espessas, pestanas duplas e longas. As patas terminam em dois dedos ligados por uma almofada plana, ideal para as deslocações tanto na areia como na neve.</br><br>É capaz de passar muito tempo sem se alimentar e sem beber água. Conta com as bossas, que funcionam como reservas de gordura, fezes secas, urina concentrada e pouca transpiração. Um animal pode perder 40% do seu peso corporal sem prejuízo para o seu organismo.</br><br>Estruturados em haréns, os machos mais jovens são obrigados a deixar o grupo pelo macho dominante. A fêmea em parto afasta-se do grupo e mantém-se com a sua cria recém-nascida, afastada, durante as primeiras 2 semanas de vida. Os nascimentos dão-se principalmente em março ou abril, quando há maior abundância de alimento.</br>",
     "kid_text": "KID KID",
     "images": [
-      "./assets/pictures/rino1.jpg",
-      "./assets/pictures/rino2.jpg",
-      "./assets/pictures/rino3.jpg"
+      "./assets/pictures/camelo1.jpg",
+      "./assets/pictures/camelo2.jpg",
+      "./assets/pictures/camelo3.jpg"
     ],
-    "audio": "./assets/audio/rino.mp3",
-    "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/rinoceronte-branco/"
+    "audio": "./assets/audio/camelo.mp3",
+    "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/camelo/"
   }
 }
