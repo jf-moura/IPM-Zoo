@@ -1,5 +1,7 @@
 function submit_billing()
 {
+    if(isAllFilled){
+
     const fname = document.getElementById('fname');
     const email = document.getElementById('email');
 
@@ -17,7 +19,12 @@ function submit_billing()
     sessionStorage.setItem("country", text);
 
     window.location.href = "./bilhetes.html";
+    }else {
+        alert("Por favor, preencha todos os campos.")
+    }
 }
+
+
 
 function update_cart()
 {
