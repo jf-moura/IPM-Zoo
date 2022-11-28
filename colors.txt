@@ -5,8 +5,6 @@ Light-green: #CDD79B
 
 Blue-grey: #D2DFE7
 
-Brown: #613C36
-
-Body-bg-color: 
+Brown: #613C36 
 
 Header-bg-color: #f5f5f5
