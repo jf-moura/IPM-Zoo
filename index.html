@@ -19,10 +19,16 @@
       </div>
       <div class="nav-subsections">
         <a href="PlanVisit.html">Organizar Visita</a>
-        <a href="bilheteira.html">Comprar Bilhetes</a>
+        <a id="buy_tickets" href="bilheteira.html" style="display: block"
+          >Comprar Bilhetes</a
+        >
       </div>
       <label class="toggle young-old" id="toggle_outside">
-        <input type="checkbox" class="toggle-checkbox" />
+        <input
+          type="checkbox"
+          class="toggle-checkbox"
+          id="toggle_outside_aux"
+        />
         <div class="toggle-btn"></div>
       </label>
     </nav>
@@ -164,7 +170,9 @@
   });
 
   const kidToggle_outside = document.getElementById("toggle_outside");
+  const kidToggle_outside_aux = document.getElementById("toggle_outside_aux");
   const kidToggle_inside = document.getElementById("toggle_inside");
+  const buyTickets_button = document.getElementById("buy_tickets");
 
   const audioKid = document.getElementById("audio_kid");
   const audioKid_source = document.getElementById("audio_kid_source");
@@ -194,6 +202,7 @@
     audioKid.style.display = kidToggle_outside.control.checked
       ? "block"
       : "none";
+
     audioKid.innerHTML = `<source src="${animalinfo[animal].audio}" type="audio/mpeg" />Your browser does not support the audio element.`;
     audioKid.load();
 
@@ -216,6 +225,15 @@
       ? `${animalinfo[curAnimal].kid_text}`
       : `${animalinfo[curAnimal].adult_text}`;
     audioKid.style.display = kidToggle_inside.checked ? "block" : "none";
+    buyTickets_button.style.display = kidToggle_inside.checked
+      ? "none"
+      : "block";
+  };
+
+  kidToggle_outside_aux.onclick = () => {
+    buyTickets_button.style.display = kidToggle_outside_aux.checked
+      ? "none"
+      : "block";
   };
 
   // When the user clicks on <span> (x), close the modal
