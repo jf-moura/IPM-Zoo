@@ -38,7 +38,7 @@
 .content {
   /* display: none; */
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #f5f5f5;
   width: 30%;
   cursor: pointer;
   text-align: center;
@@ -58,7 +58,7 @@
 }
 
 .submitAnimalsButton {
-  background-color: #04aa6d;
+  background-color: #305852;
   text-align: center;
   line-height: 5px;
   color: white;
@@ -77,7 +77,7 @@
   
 }
 .submitAnimalsButton:hover {
-  background-color: #45a049;
+  background-color: #14453D;
   
 }
 

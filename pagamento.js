@@ -16,7 +16,7 @@ function submit_billing()
 
     sessionStorage.setItem("country", text);
 
-
+    window.location.href = "./bilhetes.html";
 }
 
 function update_cart()

@@ -3,11 +3,22 @@
   height: 80vh;
   text-align: center;
   margin: 0 auto;
+  padding: 5vh;
+}
+
+
+.route-description{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+li{
+  padding: 3px;
 }
 
 .back-button,
 .print-button {
-  background-color: #04aa6d;
+  background-color: #3D7068;
   text-align: center;
   line-height: 5px;
   color: white;
@@ -26,5 +37,7 @@
 
 .back-button:hover,
 .print-button:hover {
-  background-color: #45a049;
+  background-color: #305852;
 }
+
+

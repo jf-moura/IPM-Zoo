@@ -58,7 +58,7 @@ function changeDisplaySelectedAnimal(animal) {
 
     //list animals
     const elemList = document.getElementById(animal + "-list");
-    elemList.style.backgroundColor = "#45a049";
+    elemList.style.backgroundColor = "#3D7068";
     elemList.style.color = "white";
   
   } else {
@@ -72,7 +72,7 @@ function changeDisplaySelectedAnimal(animal) {
 
     //list animals
     const elemList = document.getElementById(animal + "-list");
-    elemList.style.backgroundColor = "#f1f1f1";
+    elemList.style.backgroundColor = "#f5f5f5";
     elemList.style.color = "black";
   }
 }

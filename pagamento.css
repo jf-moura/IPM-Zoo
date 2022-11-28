@@ -86,7 +86,7 @@ label {
 
 .btn {
   display:inline;
-  background-color: #04AA6D;
+  background-color: #3D7068;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -108,7 +108,7 @@ label {
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #305852;
 }
 
 span.price {
