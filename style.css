@@ -313,6 +313,10 @@ body{
   color: white;
 }
 
+.footer-container a:hover {
+  color: #CDD79B;
+}
+
 .footer-social-media {
   margin-left: 30px;
   justify-content: end;
@@ -414,15 +418,17 @@ body{
   font-size: 15px;
   padding: 5px 5px;
   border-radius: 20%;
+  text-decoration: none;
 }
 
 /* The Close Button */
 .close {
   position: absolute;
-  top: -8%;
-  right: -2%;
+  top: 1%;
+  right: 1%;
   transform: none;
-  width: 4%;
+  width: 3%;
+  color: white;
 }
 
 .close:hover,
