@@ -135,9 +135,9 @@
     "adult_text": "<br>O Macaco-de-brazza distingue-se pela coroa negra de onde se destaca um crescente de cor alaranjada acima das sobrancelhas. As nádegas e a zona interior das coxas estão cobertas por pêlo branco. O macho tende a ser maior do que a fêmea. Ambos os sexos apresentam barba e focinho brancos.</br><br>O Gorila ocidental das terras baixas é o maior de todos os primatas. A observação do nariz permite distinguir indivíduos. Os machos, são maiores que as fêmeas, e o dominante do grupo desenvolve uma pelagem acinzentada no dorso, é o dorso-prateado. Tem uma dieta herbívora variada.</br><br>O Chimpanzé macho é ligeiramente maior do que a fêmea. A pelagem é negra, relativamente longa e, geralmente, ambos os sexos apresentam uma barba branca. As crias nascem com a pele rosada na face e nas mãos e com um tufo caudal de pelos brancos, que desaparece até à idade adulta.    </br>",
     "kid_text": "<ul><li><img src='./assets/info-images/macaco1.png'></li><li><img src='./assets/info-images/macaco2.png'></li><li><img src='./assets/info-images/macaco3.png'></li></ul>",
     "images": [
-      "./assets/pictures/macaco1.png",
-      "./assets/pictures/macaco2.png",
-      "./assets/pictures/macaco3.png"
+      "./assets/pictures/macaco1.jpg",
+      "./assets/pictures/macaco2.jpg",
+      "./assets/pictures/macaco3.jpg"
     ],
     "audio": "./assets/audio/macaco.mp3",
     "link": "https://www.zoo.pt/pt/conhecer/animais/mamiferos/chimpanze/"
