@@ -15,20 +15,20 @@
     <script>
       
       const locations = [
-      {animalName: "zebra", x:290, y:158},
-      {animalName: "tiger", x:250, y:167},
-      {animalName: "dolphin", x:220, y:105},
-      {animalName: "camel", x:130, y:155},
-      {animalName: "giraffe", x:135, y:226},
-      {animalName: "red-panda", x:150, y:260},
-      {animalName: "elephant", x:147, y:300},
-      {animalName: "hippo", x:183, y:335},
-      {animalName: "lion", x:150, y:368},
-      {animalName: "cheetah", x:105, y:413},
-      {animalName: "primate", x:247, y:305},
-      {animalName: "deer", x:300, y:380},
-      {animalName: "bear", x:320, y:490},
-      {animalName: "rhino", x:325, y:318}
+      {animalName: "Zebra", x:290, y:158},
+      {animalName: "Tigre", x:250, y:167},
+      {animalName: "Golfinhos", x:220, y:105},
+      {animalName: "Camelo", x:130, y:155},
+      {animalName: "Girafa", x:135, y:226},
+      {animalName: "PandaVermelho", x:150, y:260},
+      {animalName: "Elefante", x:147, y:300},
+      {animalName: "Hipopótamo", x:183, y:335},
+      {animalName: "Leão", x:150, y:368},
+      {animalName: "Chita", x:105, y:413},
+      {animalName: "Primatas", x:247, y:305},
+      {animalName: "Veado", x:300, y:380},
+      {animalName: "Urso", x:320, y:490},
+      {animalName: "Rinoceronte", x:325, y:318}
     ]
 
     const numPathPattern = "https://ionchirica.com/ipm/numbers/"
@@ -74,14 +74,7 @@
               height: pngDims.height,
             })
           
-        }
-
-
-
-
-
-
-
+        } 
 
   
         // Serialize the PDFDocument to bytes (a Uint8Array)
@@ -108,18 +101,15 @@
       </div>
       <div class="nav-subsections">
         <a href="PlanVisit.html">Organizar Visita</a>
-        <a href="bilhetes.html">Comprar Bilhetes</a>
+        <a href="bilheteira.html">Comprar Bilhetes</a>
       </div>
-      <label class="toggle young-old" id="toggle_outside">
-        <input type="checkbox" class="toggle-checkbox" />
-        <div class="toggle-btn"></div>
-      </label>
+      
     </nav>
 
     <div class="ideal-route-container" id="ideal-route-container">
       <h2>Rota Ideal</h2>
       <ul id="ideal-route"></ul>
-      <div s>
+      <div>
         <button
           type="button"
           class="back-button"

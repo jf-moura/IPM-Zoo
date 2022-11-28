@@ -1,20 +1,21 @@
 //The orderToVisit[0] animal will be the animal to be visited at first place, the orderToVisit[1] is the second and so on
 const orderToVisit = [
-  "zebra",
-  "tiger",
-  "dolphin",
-  "camel",
-  "giraffe",
-  "red-panda",
-  "elephant",
-  "hippo",
-  "lion",
-  "cheetah",
-  "primate",
-  "deer",
-  "bear",
-  "rhino"
+  "Zebra",
+  "Tigre",
+  "Golfinhos",
+  "Camelo",
+  "Girafa",
+  "PandaVermelho",
+  "Elefante",
+  "Hipopótamo",
+  "Leão",
+  "Chita",
+  "Primatas",
+  "Veado",
+  "Urso",
+  "Rinoceronte"
 ];
+
 
 const NO_ANIMALS_SELECTED =
   "You have to selected at least one animal in order to organize your visit!";
@@ -59,6 +60,7 @@ function changeDisplaySelectedAnimal(animal) {
     const elemList = document.getElementById(animal + "-list");
     elemList.style.backgroundColor = "#45a049";
     elemList.style.color = "white";
+  
   } else {
     //map
     const elem = document.getElementById(animal + "-button-selected");
