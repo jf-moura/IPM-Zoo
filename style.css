@@ -1,29 +1,38 @@
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bellota Text", cursive;
+  font-family: "Inter", cursive;
   width: 100%;
+
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  background-color: #fafafa;
 }
 
 .header {
-  background: rgb(245, 245, 245);
+  background: #f5f5f5;
   position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5vh 25vh;
   height: 10vh;
+  font-weight: 600;
 }
 
 .header a {
   text-decoration: none;
-  color: #3a5a40;
+  color: #3D7068;
   font-size: 3vh;
 }
 
 .header a:hover {
-  color: #132a13;
+  color: #CDD79B;
 }
 
 .logo-container {
@@ -35,7 +44,7 @@
   margin-left: 4vh;
   justify-content: start;
   display: grid;
-  grid-template-columns: 25vh 25vh;
+  grid-template-columns: 27vh 27vh;
 }
 
 .toggle {
@@ -290,7 +299,7 @@
 }
 
 .footer-container {
-  background: #588157;
+  background: #3D7068;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -344,7 +353,7 @@
 /* Modal Header */
 .modal-header {
   padding: 2px 16px;
-  background-color: #588157;
+  background-color: #14453D;
   color: white;
 }
 
@@ -394,7 +403,7 @@
   grid-template-columns: 80% 20%;
   column-gap: normal;
   padding: 2px 16px;
-  background-color: #588157;
+  background-color: #14453D;
   color: white;
 }
 
