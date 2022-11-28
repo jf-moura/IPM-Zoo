@@ -371,7 +371,8 @@
 
 .animal-info {
   overflow-wrap: break-word;
-  padding-right: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .photo-1 {
@@ -432,4 +433,8 @@
     top: 15%;
     opacity: 1;
   }
+}
+
+ul {
+  list-style-type: none;
 }

@@ -3,7 +3,7 @@
     "name_kid": "Urso Pardo",
     "name_adult": "Urso pardo (<i>Ursus arctos</i>)",
     "adult_text": "<br>O macho é, em média, 10 a 20% maior que a fêmea. No entanto, o tamanho e a coloração da pelagem variam conforme a distribuição geográfica. As garras são longas e praticamente direitas, sendo que as dos membros anteriores chegam aos 10 cm de comprimento.</br> <br>Territorial, faz demarcação visual e olfativa com as marcas das garras nos troncos das árvores e esfregando-se nestes, no entanto, em épocas de especial abundância alimentar, podem reunir-se vários animais de forma relativamente pacífica.</br> <br>A curta gestação pode só se iniciar 5 meses após a fecundação ao que se chama implantação retardada. Dependendo da distribuição da população, estes animais, nos meses mais frios, podem passar por um estado de letargia em que se recolhem em tocas. As crias nascem habitualmente nas tocas e mantêm-se com a progenitora até aos 2-4 anos de idade.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/bear1.png'></li><li><img src='./assets/info-images/bear2.png'></li><li><img src='./assets/info-images/bear3.png'></li></ul>",
     "images": [
       "./assets/pictures/urso_pardo1.jpg",
       "./assets/pictures/urso_pardo2.jpg",
@@ -16,7 +16,7 @@
     "name_kid": "Elefante africano de savana",
     "name_adult": " Elefante africano de savana (<i>Loxodonta africana</i>)",
     "adult_text": "<br>É o maior animal terrestre, sendo o macho maior do que a fêmea. A inconfundível tromba é formada pelo nariz e lábio superior. A pele é espessa e quase desprovida de pelos. Dentes incisivos superiores crescem ao longo de toda a vida do animal. As orelhas são muito grandes e com funções de regulação de temperatura entre outras.</br><br>Vive em clãs, onde a fêmea mais velha (a matriarca) assume a liderança. Um animal adulto pode ingerir entre 150 - 300 kg de matéria vegetal por dia. Comunica através de sons de baixa frequência.</br><br>Pode ocorrer em qualquer altura do ano. O parto pode ser assistido por outra fêmea do grupo e o intervalo mínimo entre nascimentos é de 4 anos. Todas as fêmeas do grupo participam na proteção das crias. Cada cria é amamentada durante cerca de 2 anos.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/elefante1.png'></li><li><img src='./assets/info-images/elefante2.png'></li><li><img src='./assets/info-images/elefante3.png'></li></ul>",
     "images": [
       "./assets/pictures/elefante1.jpg",
       "./assets/pictures/elefante2.jpg",
@@ -29,7 +29,7 @@
     "name_kid": "Chita",
     "name_adult": "Chita (<i>Acinonyx jubatus</i>)",
     "adult_text": "<br>É o mamífero terrestre mais rápido do Mundo em curtas distâncias. Distingue-se pelo corpo esguio e pela linha negra em forma de lágrima, do canto de cada olho até à boca. O macho é maior do que a fêmea. Contrariamente à maioria dos felinos, tem garras expostas, fundamentais para a corrida em velocidade.</br><br>É geralmente solitária, mas é frequente formarem-se pequenos grupos de machos irmãos que muitas vezes se mantêm juntos para a vida. Procura abrigo junto da vegetação rasteira mais densa. Caça por perseguição em corrida. E marca o seu território com urina.</br><br>A fêmea é poliéstrica, está recetiva em intervalos curtos de tempo, várias vezes por ano. Por ninhada, nascem em média 4 crias que são amamentadas durante cerca de 4 meses. Apesar dos cuidados da progenitora, a taxa de mortalidade das crias até aos 3 meses é muito elevada na natureza.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/chita1.png'></li><li><img src='./assets/info-images/chita2.png'></li><li><img src='./assets/info-images/chita3.png'></li></ul>",
     "images": [
       "./assets/pictures/chita1.jpg",
       "./assets/pictures/chita2.jpg",
@@ -42,7 +42,7 @@
     "name_kid": "Girafa de Angola",
     "name_adult": "Girafa de Angola (<i>Giraffa camelopardalis angolensis</i>)",
     "adult_text": "<br>A cor e o padrão da pelagem variam conforme a zona geográfica. É o animal mais alto do Mundo, só o seu pescoço pode medir 2 m. Nos machos, as formações córneas revestidas por pele no topo da cabeça, são antecedidas por uma pequena proeminência no meio da fronte.</br><br>Os machos estabelecem a hierarquia no grupo através de demoradas lutas em que utilizam o pescoço que lançam de encontro ao outro macho, até que o lugar de cada um no grupo seja definido. É uma espécie pacífica e não territorial. Nas horas de maior calor rumina e dorme, maioritariamente de pé.</br><br>Após um período de amamentação, geralmente de 8 meses, a progenitora diminui os cuidados com a cria que, no entanto, a continuará a seguir até atingir 1 ano de idade ou mesmo até à idade adulta.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/girafa1.png'></li><li><img src='./assets/info-images/girafa2.png'></li><li><img src='./assets/info-images/girafa3.png'></li></ul>",
     "images": [
       "./assets/pictures/girafa1.jpg",
       "./assets/pictures/girafa2.jpg",
@@ -55,7 +55,7 @@
     "name_kid": "Hipopótamo",
     "name_adult": "Hipopótamo (<i>Hippopotamus amphibius</i>)",
     "adult_text": "<br>A pele quase nua é protegida por uma secreção glandular avermelhada. Os dentes caninos crescem ao longo da vida do animal e podem atingir os 60-80 cm. A colocação no topo da cabeça dos olhos, orelhas e narinas, e os dedos unidos por membranas, são algumas adaptações à vida semiaquática.</br><br>Espécie muito territorial e agressiva na defesa do seu território. Passa o dia na água de forma gregária e a noite a pastar plantas herbáceas, de forma solitária. Ao amanhecer, regressa aos rios e podem formar-se grandes agregados de animais, mantendo-se as relações hierárquicas.</br><br>A cópula, o parto e a amamentação ocorrem, dentro de água. Cada cria nasce com 30-50 kg de peso, e é amamentada durante 10-12 meses. É comum observar-se fêmeas acompanhadas por 2 a 4 crias de idades diferentes. É frequente em ambos os sexos não haver acasalamento antes dos 13-15 anos de idade.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/hipo1.png'></li><li><img src='./assets/info-images/hipo2.png'></li><li><img src='./assets/info-images/hipo3.png'></li></ul>",
     "images": [
       "./assets/pictures/hipopotamo1.jpg",
       "./assets/pictures/hipopotamo2.jpg",
@@ -68,7 +68,7 @@
     "name_kid": "Leão Africano",
     "name_adult": "Leão Africano (<i>Panthera leo bleyenberghi</i>)",
     "adult_text": "<br>É o maior carnívoro africano. Apresenta dimorfismo sexual, o macho é maior e mais pesado que a fêmea e exibe uma extensa juba que se começa a evidenciar a partir dos 3 anos de idade. Ambos, exibem um tufo de pêlos na ponta da cauda, que utilizam na comunicação entre o grupo, além de expressões corporais e vocalizações.</br> <br>Esta é a única espécie de grandes felinos que vive em grupos sociais. Forma clãs onde há um macho dominante, fêmeas aparentadas (irmãs, primas, filhas) e as suas crias. A vida em grupo permite a partilha de tarefas. O macho adulto é sempre o dominante do grupo, é ele quem patrulha, marca e defende o território, e quem cuida das crias quando as leoas se ausentam; já a obtenção de alimento para todos é da responsabilidade das fêmeas que caçam em equipa de forma muito eficaz.</br><br>As fêmeas tendem a sincronizar cios o que possibilita a amamentação das crias por outras fêmeas que não apenas a progenitora. As crias estão totalmente dependentes de cuidados nos primeiros 16 meses de vida. As fêmeas originam crias novas a cada 2 anos e, sempre que é preciso, além dos cuidados da progenitora, os pequenos leões podem contar com as tias, primas ou irmãs mais velhas.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/leao1.png'></li><li><img src='./assets/info-images/leao2.png'></li><li><img src='./assets/info-images/leao3.png'></li></ul>",
     "images": [
       "./assets/pictures/leao1.jpg",
       "./assets/pictures/leao2.jpg",
@@ -81,7 +81,7 @@
     "name_kid": "Rinoceronte branco",
     "name_adult": "Rinoceronte branco (<i>Ceratotherium simum</i>)",
     "adult_text": "<br>É o segundo maior animal terrestre, sendo o macho maior do que a fêmea. Tem pelo apenas nas orelhas e na ponta da cauda. O lábio superior é reto e preênsil. Os dois chifres frontais são compostos por queratina e o maior pode atingir 1,5 m de comprimento.</br><br>É a espécie de rinoceronte mais sociável. As fêmeas estão geralmente acompanhadas pelas suas crias mais recentes e os machos dominantes são solitários. Podem formar-se grupos temporários de 14 ou mais animais. É territorial e um macho defende o seu território de outro, apesar do confronto físico ser evitado.</br><br>Depois do período de corte e acasalamento, que pode durar até 3 semanas, a fêmea pode deixar o território do macho. Quando ameaçada, a progenitora faz guarda à sua cria caso contrário deixa-a andar livremente nas suas imediações. A cria pode ser amamentada até aos 2 anos de idade.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/rino1.png'></li><li><img src='./assets/info-images/rino2.png'></li><li><img src='./assets/info-images/rino3.png'></li></ul>",
     "images": [
       "./assets/pictures/rino1.jpg",
       "./assets/pictures/rino2.jpg",
@@ -94,7 +94,7 @@
     "name_kid": "Tigre-da-sibéria",
     "name_adult": "Tigre-da-sibéria (<i>Panthera tigris altaica</i>)",
     "adult_text": "<br>É a maior de todas as subespécies de tigre e o maior felino do mundo. A pelagem densa é de cor ocre relativamente clara, com riscas escuras longitudinais bem adaptada à neve e ao frio.</br><br>É territorial e deixa marcas visuais e olfativas para demarcação do seu território, que pode atingir os 100 km². Os adultos não são necessariamente hostis entre si, à exceção de uma fêmea com crias, que se torna agressiva, sobretudo para com os machos.</br><br>O acasalamento pode ocorrer em qualquer altura do ano, no entanto, em cada época de acasalamento, um macho e uma fêmea acasalam apenas um com o outro. As crias são amamentadas até aos 3 a 6 meses de idade.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/tigre1.png'></li><li><img src='./assets/info-images/tigre2.png'></li><li><img src='./assets/info-images/tigre3.png'></li></ul>",
     "images": [
       "./assets/pictures/tigre1.jpg",
       "./assets/pictures/tigre2.jpg",
@@ -107,7 +107,7 @@
     "name_kid": "Golfinho-roaz",
     "name_adult": "Golfinho-roaz (<i>Tursiops truncatus</i>)",
     "adult_text": "<br>O macho é maior do que a fêmea e os animais que vivem ao largo tendem também a ser maiores e mais robustos do que os animais costeiros. Tem uma camada grossa de gordura debaixo da pele que o ajuda a manter a temperatura corporal. Respira por pulmões e o espiráculo, no cimo da cabeça, facilita a respiração à superfície.</br><br>Vive em grupos sociais complexos e coesos cujo tamanho varia com habitat. Em zonas costeiras formam pequenos grupos até 10 indivíduos mas em mar aberto podem ir até aos 25 animais. Por vezes avistam-se indivíduos isolados, habitualmente machos solitários. O grupo coopera na defesa contra predadores, na captura de alimento e na criação dos mais jovens. Emite sons semelhantes a estalidos e assobios, e utiliza-os para comunicar através de um mecanismo complexo localizado na cabeça.</br><br>Os machos lutam pelo acesso às fêmeas. Quando um macho escolhe uma fêmea, nada ao seu lado durante longos períodos de tempo. A cria é amamentada até aos 12-18 meses de idade e mantém-se junto da progenitora até aos 4-5 anos. A ligação entre a mãe e a cria é extremamente forte.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/golfinho1.png'></li><li><img src='./assets/info-images/golfinho2.png'></li><li><img src='./assets/info-images/golfinho3.png'></li></ul>",
     "images": [
       "./assets/pictures/golfinho1.jpg",
       "./assets/pictures/golfinho2.jpg",
@@ -120,7 +120,7 @@
     "name_kid": "Zebra-de-grevy",
     "name_adult": "Zebra-de-grevy (<i>Equus grevyi</i>)",
     "adult_text": "<br>É a maior das 3 espécies de Zebra conhecidas. Apresenta um padrão típico de pelagem branca com riscas negras estreitas e zona ventral branca. A lista preta longitudinal ao longo do corpo permite distinguir esta espécie de Zebra. As orelhas são grandes e de cor branca na ponta.</br><br>Contrariamente a outras zebras, esta espécie não estabelece grupos familiares duradouros. Vive em manadas com uma estrutura social organizada, mas os grupos estão em constante alteração. Em grupos mistos, o macho dominante é o único a acasalar. Em épocas de seca as manadas migram em conjunto.</br><br>A cria já nasce com o padrão listado dos indivíduos adultos sendo no entanto mais acastanhado. Consegue acompanhar a progenitora desde cedo, mesmo em corrida. Cada cria é amamentada até aos 6 a 8 meses de idade. Os machos atingem a maturidade sexual perto dos 3 anos mas, geralmente, não acasalam antes dos 6.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/zebra1.png'></li><li><img src='./assets/info-images/zebra2.png'></li><li><img src='./assets/info-images/zebra3.png'></li></ul>",
     "images": [
       "./assets/pictures/zebra1.jpg",
       "./assets/pictures/zebra2.jpg",
@@ -133,7 +133,7 @@
     "name_kid": "Área dos macacos",
     "name_adult": "Área dos primatas",
     "adult_text": "<br>O Macaco-de-brazza distingue-se pela coroa negra de onde se destaca um crescente de cor alaranjada acima das sobrancelhas. As nádegas e a zona interior das coxas estão cobertas por pêlo branco. O macho tende a ser maior do que a fêmea. Ambos os sexos apresentam barba e focinho brancos.</br><br>O Gorila ocidental das terras baixas é o maior de todos os primatas. A observação do nariz permite distinguir indivíduos. Os machos, são maiores que as fêmeas, e o dominante do grupo desenvolve uma pelagem acinzentada no dorso, é o dorso-prateado. Tem uma dieta herbívora variada.</br><br>O Chimpanzé macho é ligeiramente maior do que a fêmea. A pelagem é negra, relativamente longa e, geralmente, ambos os sexos apresentam uma barba branca. As crias nascem com a pele rosada na face e nas mãos e com um tufo caudal de pelos brancos, que desaparece até à idade adulta.    </br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/macaco1.png'></li><li><img src='./assets/info-images/macaco2.png'></li><li><img src='./assets/info-images/macaco3.png'></li></ul>",
     "images": [
       "./assets/pictures/macaco1.png",
       "./assets/pictures/macaco2.png",
@@ -146,7 +146,7 @@
     "name_kid": "Veado-da-birmânia",
     "name_adult": "Veado-da-birmânia (<i>Rucervus eldii thamin</i>)",
     "adult_text": "<br>A pelagem torna-se mais escura e longa no inverno. As armações, apenas presentes nos machos, são longas, pouco ramificadas, de perfil côncavo e caducas (caem anualmente). As fêmeas são mais claras e os juvenis apresentam pintas claras que desvanecem com a idade.</br><br>É territorial e os machos vivem geralmente de forma solitária, enquanto as fêmeas formam pequenas unidades familiares com as suas crias. Na estação quente formam grupos mistos, com multimachos que podem chegar a 50-70 animais da espécie. Uma das principais formas de comunicação é através de secreções glandulares.</br><br>A época reprodutiva corresponde, no habitat natural, a fevereiro-maio. Durante esta época, os machos formam haréns, desenvolvem uma pelagem longa no pescoço e as armações atingem o seu tamanho máximo. A cria complementa a sua dieta com plantas desde perto dos 2 meses.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/veado1.png'></li><li><img src='./assets/info-images/veado2.png'></li><li><img src='./assets/info-images/veado3.png'></li></ul>",
     "images": [
       "./assets/pictures/veado1.jpg",
       "./assets/pictures/veado2.jpg",
@@ -159,7 +159,7 @@
     "name_kid": "Panda Vermelho",
     "name_adult": "Panda vermelho (<i>Ailurus fulgens</i>)",
     "adult_text": "<br>Caracteriza-se pela cabeça redonda, focinho curto, orelhas eretas e triangulares, e cauda espessa e anelada. Tem um falso polegar, formado por uma extensão do osso sesamóide, que utiliza para, por exemplo, arrancar folhas de bambu. De difícil classificação taxonómica, tem dentição de omnívoro, tubo digestivo de carnívoro e dieta principalmente herbívora.</br><br>É uma espécie tímida e territorial. Descansa em ramos de árvore onde se apoia apenas com o corpo, deixando as patas suspensas. A marcação através da urina, fezes e secreções glandulares é uma forma de comunicação significativa. 80% da sua dieta é composta por folhas de bambu, suplementada com frutos, rebentos, insetos, ovos e crias de aves.</br><br>Encontram-se apenas para acasalar, na época de acasalamento, de janeiro a março. A fêmea só está recetiva durante um curto período de 12 a 36 horas, em que a ovulação é induzida pela cópula. Os machos intensificam a marcação com urina e secreções glandulares, esfregando a zona anal nas árvores do seu território. A cópula ocorre no solo.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/panda1.png'></li><li><img src='./assets/info-images/panda2.png'></li><li><img src='./assets/info-images/panda3.png'></li></ul>",
     "images": [
       "./assets/pictures/panda1.jpg",
       "./assets/pictures/panda2.jpg",
@@ -172,7 +172,7 @@
     "name_kid": "Camelo",
     "name_adult": "Camelo (<i>Camelus ferus</i>)",
     "adult_text": "<br>Adaptada ao deserto rochoso e árido, é inconfundível pelas suas duas bossas. O pelo cai com o aumento da temperatura. Os olhos estão protegidos por sobrancelhas espessas, pestanas duplas e longas. As patas terminam em dois dedos ligados por uma almofada plana, ideal para as deslocações tanto na areia como na neve.</br><br>É capaz de passar muito tempo sem se alimentar e sem beber água. Conta com as bossas, que funcionam como reservas de gordura, fezes secas, urina concentrada e pouca transpiração. Um animal pode perder 40% do seu peso corporal sem prejuízo para o seu organismo.</br><br>Estruturados em haréns, os machos mais jovens são obrigados a deixar o grupo pelo macho dominante. A fêmea em parto afasta-se do grupo e mantém-se com a sua cria recém-nascida, afastada, durante as primeiras 2 semanas de vida. Os nascimentos dão-se principalmente em março ou abril, quando há maior abundância de alimento.</br>",
-    "kid_text": "KID KID",
+    "kid_text": "<ul><li><img src='./assets/info-images/camelo1.png'></li><li><img src='./assets/info-images/camelo2.png'></li><li><img src='./assets/info-images/camelo3.png'></li></ul>",
     "images": [
       "./assets/pictures/camelo1.jpg",
       "./assets/pictures/camelo2.jpg",
