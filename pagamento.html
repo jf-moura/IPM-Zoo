@@ -34,6 +34,7 @@
             <div class="row">
               <div class="col-50">
                 <h3>Dados do cliente</h3>
+                <br/>
                 <label for="fname"
                   ><i class="fa fa-user"></i> Nome Completo: (*)</label
                 >
@@ -331,29 +332,30 @@
 
               <div class="col-50">
                 <h3>Pagamento</h3>
-                <label for="cname">Nome do Titular do Cartão</label>
+                <br/>
+                <label for="cname">Nome do Titular do Cartão (*)</label>
                 <input
                   type="text"
                   id="cname"
                   name="cardname"
-                  placeholder="Como consta on seu cartão bancário."
+                  placeholder="Como consta no seu cartão bancário"
                   required
                 />
-                <label for="ccnum">Número do Cartão Bancário</label>
+                <label for="ccnum">Número do Cartão Bancário (*)</label>
                 <input
                   type="number"
                   id="ccnum"
                   name="cardnumber"
-                  placeholder="Os 16 números que se econtram na frente do cartão."
+                  placeholder="Os 16 números que se econtram na frente do cartão"
                   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?)$"
                   required
                 />
-                <label for="expmonth">Validade do Cartão (Mês)</label>
+                <label for="expmonth">Validade do Cartão (Mês) (*)</label>
                 <input
                   type="number"
                   id="expmonth"
                   name="expmonth"
-                  placeholder="Mês da validade do cartão"
+                  placeholder="Mês de validade do cartão"
                   min="1"
                   max="12"
                   required
@@ -361,17 +363,17 @@
 
                 <div class="row">
                   <div class="col-50">
-                    <label for="expyear">Validade do Cartão(Ano)</label>
+                    <label for="expyear">Validade do Cartão(Ano) (*)</label>
                     <input
                       type="text"
                       id="expyear"
                       name="expyear"
-                      placeholder="Ano da validade do cartão"
+                      placeholder="Ano de validade do cartão"
                       required
                     />
                   </div>
                   <div class="col-50">
-                    <label for="cvv">Código de Segurança (CVC)</label>
+                    <label for="cvv">Código de Segurança (CVC) (*)</label>
                     <input
                       type="text"
                       id="cvv"
@@ -394,9 +396,11 @@
             <span class="price" style="color: black">
               <i class="fa fa-shopping-cart" id="num_items"></i>
             </span>
+            
           </h4>
 
           <hr />
+          <br/>
           <p id="total">
             Total
             <span class="price" style="color: black"
@@ -419,7 +423,7 @@
       <button
               value="Continuar Compra"
               class="btn"
-              onclick="submit_billing(); location.href = 'bilhetes.html'"
+              onclick="isAllFilled()"
       >
         Continuar compra
       </button>
@@ -442,4 +446,28 @@
       </div>
     </div>
   </body>
+
+  <script>
+    function isAllFilled(){
+    const fname = document.getElementById('fname');
+    const email = document.getElementById('email');
+    const loc = document.getElementById('loc');
+    const cntr = document.getElementById('country');
+    const cname = document.getElementById('cname');
+    const ccnum = document.getElementById('ccnum');
+    const expmonth = document.getElementById('expmonth');
+    const expyear = document.getElementById('expyear');
+    const cvv = document.getElementById('cvv');
+
+
+    if(fname.value === '' || email.value == '' || loc.value == '' || cntr.value == '' || cname.value == '' || ccnum.value == '' || expmonth.value == '' || expyear.value == '' || cvv.value == '' ){
+        alert("Por favor, preencha todos os campos indicados com * para prosseguir com a compra.")
+    }else{
+      submit_billing()
+      location.href = 'bilhetes.html'
+    }
+
+
+}
+  </script>
 </html>
